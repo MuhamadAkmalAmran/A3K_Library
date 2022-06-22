@@ -89,6 +89,12 @@
     <Compile Include="Form_DetailRak.Designer.cs">
       <DependentUpon>Form_DetailRak.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_EditBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_EditBook.Designer.cs">
+      <DependentUpon>Form_EditBook.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_EditRak.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_DetailRak.resx">
       <DependentUpon>Form_DetailRak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_EditBook.resx">
+      <DependentUpon>Form_EditBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_EditRak.resx">
       <DependentUpon>Form_EditRak.cs</DependentUpon>
