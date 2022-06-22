@@ -21,5 +21,10 @@ namespace A3K_Library
         {
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
