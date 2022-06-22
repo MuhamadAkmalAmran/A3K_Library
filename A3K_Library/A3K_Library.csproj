@@ -77,6 +77,12 @@
     <Compile Include="Form_Book.Designer.cs">
       <DependentUpon>Form_Book.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_DetailBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DetailBook.Designer.cs">
+      <DependentUpon>Form_DetailBook.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_DetailRak.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Book.resx">
       <DependentUpon>Form_Book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DetailBook.resx">
+      <DependentUpon>Form_DetailBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_DetailRak.resx">
       <DependentUpon>Form_DetailRak.cs</DependentUpon>
