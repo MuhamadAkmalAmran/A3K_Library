@@ -1,7 +1,7 @@
 ﻿
 namespace A3K_Library
 {
-    partial class Form_Add
+    partial class Form_AddRak
     {
         /// <summary>
         /// Required designer variable.
@@ -29,15 +29,15 @@ namespace A3K_Library
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Add));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_AddRak));
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtNameAdd = new System.Windows.Forms.TextBox();
+            this.txtLocAdd = new System.Windows.Forms.TextBox();
+            this.txtCategoryAdd = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -46,7 +46,7 @@ namespace A3K_Library
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(124, 48);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Save";
+            this.button1.Text = "Add";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // label1
@@ -93,48 +93,48 @@ namespace A3K_Library
             this.label4.TabIndex = 4;
             this.label4.Text = "Nama Rak";
             // 
-            // textBox1
+            // txtNameAdd
             // 
-            this.textBox1.Location = new System.Drawing.Point(604, 155);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(300, 50);
-            this.textBox1.TabIndex = 5;
+            this.txtNameAdd.Location = new System.Drawing.Point(604, 155);
+            this.txtNameAdd.Multiline = true;
+            this.txtNameAdd.Name = "txtNameAdd";
+            this.txtNameAdd.Size = new System.Drawing.Size(300, 50);
+            this.txtNameAdd.TabIndex = 5;
             // 
-            // textBox2
+            // txtLocAdd
             // 
-            this.textBox2.Location = new System.Drawing.Point(604, 308);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(300, 50);
-            this.textBox2.TabIndex = 6;
+            this.txtLocAdd.Location = new System.Drawing.Point(604, 308);
+            this.txtLocAdd.Multiline = true;
+            this.txtLocAdd.Name = "txtLocAdd";
+            this.txtLocAdd.Size = new System.Drawing.Size(300, 50);
+            this.txtLocAdd.TabIndex = 6;
             // 
-            // textBox3
+            // txtCategoryAdd
             // 
-            this.textBox3.Location = new System.Drawing.Point(604, 228);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(300, 50);
-            this.textBox3.TabIndex = 7;
+            this.txtCategoryAdd.Location = new System.Drawing.Point(604, 228);
+            this.txtCategoryAdd.Multiline = true;
+            this.txtCategoryAdd.Name = "txtCategoryAdd";
+            this.txtCategoryAdd.Size = new System.Drawing.Size(300, 50);
+            this.txtCategoryAdd.TabIndex = 7;
             // 
-            // Form_Add
+            // Form_AddRak
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1262, 673);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCategoryAdd);
+            this.Controls.Add(this.txtLocAdd);
+            this.Controls.Add(this.txtNameAdd);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.DoubleBuffered = true;
-            this.Name = "Form_Add";
-            this.Text = "Form_Add";
+            this.Name = "Form_AddRak";
+            this.Text = "Form_AddRak";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -147,8 +147,8 @@ namespace A3K_Library
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtNameAdd;
+        private System.Windows.Forms.TextBox txtLocAdd;
+        private System.Windows.Forms.TextBox txtCategoryAdd;
     }
 }

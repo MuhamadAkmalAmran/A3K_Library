@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace A3K_Library
 {
-    public partial class Form_Add : Form
+    public partial class Form_DetailRak : Form
     {
-        public Form_Add()
+        public Form_DetailRak()
         {
             InitializeComponent();
+        }
+
+        private void Form_Detail_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

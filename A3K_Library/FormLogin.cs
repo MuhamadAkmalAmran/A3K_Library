@@ -10,19 +10,21 @@ using System.Windows.Forms;
 
 namespace A3K_Library
 {
-    public partial class Form_Detail : Form
+    public partial class FormLogin : Form
     {
-        public Form_Detail()
+        public FormLogin()
         {
             InitializeComponent();
         }
 
-        private void Form_Detail_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            FormMenu menu = new FormMenu();
+            menu.Show();
+            this.Hide();
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

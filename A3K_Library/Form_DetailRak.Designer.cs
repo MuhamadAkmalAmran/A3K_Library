@@ -1,7 +1,7 @@
 ﻿
 namespace A3K_Library
 {
-    partial class Form_Detail
+    partial class Form_DetailRak
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace A3K_Library
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Detail));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_DetailRak));
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -131,7 +131,7 @@ namespace A3K_Library
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
-            // Form_Detail
+            // Form_DetailRak
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -147,8 +147,8 @@ namespace A3K_Library
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
-            this.Name = "Form_Detail";
-            this.Text = "Form_Detail";
+            this.Name = "Form_DetailRak";
+            this.Text = "Form_DetailRak";
             this.Load += new System.EventHandler(this.Form_Detail_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
