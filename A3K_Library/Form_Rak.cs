@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace A3K_Library
 {
-    public partial class Form2 : Form
+    public partial class Form_Rak : Form
     {
-        public Form2()
+        public Form_Rak()
         {
             InitializeComponent();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

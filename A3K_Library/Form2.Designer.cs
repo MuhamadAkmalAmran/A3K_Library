@@ -51,17 +51,18 @@ namespace A3K_Library
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(233, 325);
+            this.button1.Location = new System.Drawing.Point(212, 347);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(190, 50);
             this.button1.TabIndex = 0;
             this.button1.Text = "Rak Buku";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(564, 325);
+            this.button2.Location = new System.Drawing.Point(543, 347);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(190, 50);
             this.button2.TabIndex = 1;
@@ -71,7 +72,7 @@ namespace A3K_Library
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(881, 325);
+            this.button3.Location = new System.Drawing.Point(860, 347);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(190, 50);
             this.button3.TabIndex = 2;
@@ -83,7 +84,7 @@ namespace A3K_Library
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(266, 172);
+            this.pictureBox1.Location = new System.Drawing.Point(245, 194);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(130, 130);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -94,7 +95,7 @@ namespace A3K_Library
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(597, 172);
+            this.pictureBox2.Location = new System.Drawing.Point(576, 194);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(130, 130);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -105,7 +106,7 @@ namespace A3K_Library
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(915, 172);
+            this.pictureBox3.Location = new System.Drawing.Point(894, 194);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(130, 130);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

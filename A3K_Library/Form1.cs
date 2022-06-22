@@ -19,7 +19,9 @@ namespace A3K_Library
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Form2 menu = new Form2();
+            menu.Show();
+            this.Hide();
         }
 
         private void Form1_Load(object sender, EventArgs e)
