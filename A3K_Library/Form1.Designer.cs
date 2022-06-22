@@ -46,9 +46,9 @@ namespace A3K_Library
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(564, 448);
+            this.button1.Location = new System.Drawing.Point(555, 447);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(130, 50);
+            this.button1.Size = new System.Drawing.Size(150, 50);
             this.button1.TabIndex = 0;
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = true;
