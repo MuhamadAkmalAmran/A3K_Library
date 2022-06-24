@@ -21,5 +21,12 @@ namespace A3K_Library
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            FormMenu mn = new FormMenu();
+            mn.Show();
+            this.Close();
+        }
     }
 }
