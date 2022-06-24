@@ -134,6 +134,7 @@ namespace A3K_Library
             this.Controls.Add(this.button1);
             this.DoubleBuffered = true;
             this.Name = "Form_AddRak";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_AddRak";
             this.ResumeLayout(false);
             this.PerformLayout();

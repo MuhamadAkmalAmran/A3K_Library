@@ -104,6 +104,7 @@ namespace A3K_Library
             this.Controls.Add(this.dataGridView1);
             this.DoubleBuffered = true;
             this.Name = "Form_Book";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Book";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

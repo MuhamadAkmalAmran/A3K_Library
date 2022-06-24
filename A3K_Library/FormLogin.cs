@@ -19,9 +19,19 @@ namespace A3K_Library
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormMenu menu = new FormMenu();
-            menu.Show();
-            this.Hide();
+            if (tbID.Text == "User" && tbPassword.Text == "user")
+            {
+                FormMenu menu = new FormMenu();
+                menu.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Please check your username and password");
+                tbID.Clear();
+                tbPassword.Clear();
+            }
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)

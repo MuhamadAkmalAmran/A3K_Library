@@ -352,6 +352,7 @@ namespace A3K_Library
             this.Controls.Add(this.button1);
             this.DoubleBuffered = true;
             this.Name = "Form_EditBook";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Edit Book";
             this.ResumeLayout(false);
             this.PerformLayout();

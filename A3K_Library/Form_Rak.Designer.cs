@@ -112,6 +112,7 @@ namespace A3K_Library
             this.Controls.Add(this.dataGridView1);
             this.DoubleBuffered = true;
             this.Name = "Form_Rak";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Rak";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

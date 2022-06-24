@@ -241,6 +241,7 @@ namespace A3K_Library
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.Name = "Form_Profile";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Profile";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

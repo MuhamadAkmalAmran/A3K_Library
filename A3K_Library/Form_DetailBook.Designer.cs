@@ -395,6 +395,7 @@ namespace A3K_Library
             this.Controls.Add(this.label2);
             this.DoubleBuffered = true;
             this.Name = "Form_DetailBook";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_DetailBook";
             this.Load += new System.EventHandler(this.Form_DetailBook_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

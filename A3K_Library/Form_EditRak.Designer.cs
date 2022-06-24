@@ -142,6 +142,7 @@ namespace A3K_Library
             this.Controls.Add(this.saveRakBtn);
             this.DoubleBuffered = true;
             this.Name = "Form_EditRak";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_EditRak";
             this.ResumeLayout(false);
             this.PerformLayout();
