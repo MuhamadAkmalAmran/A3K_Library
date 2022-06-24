@@ -29,6 +29,7 @@ namespace A3K_Library
                 MessageBox.Show("Please check your username and password");
                 tbID.Clear();
                 tbPassword.Clear();
+                this.Close();
             }
             
         }
