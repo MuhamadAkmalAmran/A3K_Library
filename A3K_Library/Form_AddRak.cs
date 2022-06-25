@@ -16,5 +16,12 @@ namespace A3K_Library
         {
             InitializeComponent();
         }
+
+        private void Form_AddRak_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'a3K_LibraryDataSet.Rak' table. You can move, or remove it, as needed.
+            this.rakTableAdapter.Fill(this.a3K_LibraryDataSet.Rak);
+
+        }
     }
 }

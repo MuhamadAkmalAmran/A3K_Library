@@ -29,6 +29,7 @@ namespace A3K_Library
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_AddRak));
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -38,6 +39,11 @@ namespace A3K_Library
             this.txtNameAdd = new System.Windows.Forms.TextBox();
             this.txtLocAdd = new System.Windows.Forms.TextBox();
             this.txtCategoryAdd = new System.Windows.Forms.TextBox();
+            this.a3K_LibraryDataSet = new A3K_Library.A3K_LibraryDataSet();
+            this.rakBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.rakTableAdapter = new A3K_Library.A3K_LibraryDataSetTableAdapters.RakTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rakBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -95,6 +101,7 @@ namespace A3K_Library
             // 
             // txtNameAdd
             // 
+            this.txtNameAdd.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.rakBindingSource, "Nomor_Rak", true));
             this.txtNameAdd.Location = new System.Drawing.Point(604, 155);
             this.txtNameAdd.Multiline = true;
             this.txtNameAdd.Name = "txtNameAdd";
@@ -103,6 +110,7 @@ namespace A3K_Library
             // 
             // txtLocAdd
             // 
+            this.txtLocAdd.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.rakBindingSource, "Lokasi_Rak", true));
             this.txtLocAdd.Location = new System.Drawing.Point(604, 308);
             this.txtLocAdd.Multiline = true;
             this.txtLocAdd.Name = "txtLocAdd";
@@ -111,11 +119,26 @@ namespace A3K_Library
             // 
             // txtCategoryAdd
             // 
+            this.txtCategoryAdd.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.rakBindingSource, "Kategori_Rak", true));
             this.txtCategoryAdd.Location = new System.Drawing.Point(604, 228);
             this.txtCategoryAdd.Multiline = true;
             this.txtCategoryAdd.Name = "txtCategoryAdd";
             this.txtCategoryAdd.Size = new System.Drawing.Size(300, 50);
             this.txtCategoryAdd.TabIndex = 7;
+            // 
+            // a3K_LibraryDataSet
+            // 
+            this.a3K_LibraryDataSet.DataSetName = "A3K_LibraryDataSet";
+            this.a3K_LibraryDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // rakBindingSource
+            // 
+            this.rakBindingSource.DataMember = "Rak";
+            this.rakBindingSource.DataSource = this.a3K_LibraryDataSet;
+            // 
+            // rakTableAdapter
+            // 
+            this.rakTableAdapter.ClearBeforeFill = true;
             // 
             // Form_AddRak
             // 
@@ -136,6 +159,9 @@ namespace A3K_Library
             this.Name = "Form_AddRak";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_AddRak";
+            this.Load += new System.EventHandler(this.Form_AddRak_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rakBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -151,5 +177,8 @@ namespace A3K_Library
         private System.Windows.Forms.TextBox txtNameAdd;
         private System.Windows.Forms.TextBox txtLocAdd;
         private System.Windows.Forms.TextBox txtCategoryAdd;
+        private A3K_LibraryDataSet a3K_LibraryDataSet;
+        private System.Windows.Forms.BindingSource rakBindingSource;
+        private A3K_LibraryDataSetTableAdapters.RakTableAdapter rakTableAdapter;
     }
 }

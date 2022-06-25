@@ -26,5 +26,14 @@ namespace A3K_Library
         {
 
         }
+
+        private void Form_AddBook_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'a3K_LibraryDataSet2.Buku' table. You can move, or remove it, as needed.
+            this.bukuTableAdapter1.Fill(this.a3K_LibraryDataSet2.Buku);
+            // TODO: This line of code loads data into the 'a3K_LibraryDataSet1.Buku' table. You can move, or remove it, as needed.
+            this.bukuTableAdapter.Fill(this.a3K_LibraryDataSet1.Buku);
+
+        }
     }
 }
