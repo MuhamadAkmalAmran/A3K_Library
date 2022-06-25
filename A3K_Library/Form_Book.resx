@@ -121,7 +121,7 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAACktSURBVHhe7d1J
+        EgAACxIB0t1+/AAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAACktSURBVHhe7d1J
         jGSHfd9xWpYXCD7ZBoJEjgIESeBjgACWfYkDBcjBpwSJbDiHAImTHAIjyUWCfTDSpEkOKclaKC4z4j5c
         NZwZLjPchj0zXIciRUkciqsVWzIpkaZNCoh1Ecmuenmv6r1aXncNp7fXVb/6fIA/ij0Qp3uK3fx9axbq
         AiDbykrxkWNHi986dqT44+NH+kePH+6/eP+R/o/vP9z/4P7DvQ/uP9L78QOHe9994K7+0QcP9f7ogSPF
@@ -303,14 +303,14 @@
   <metadata name="bukuBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>681, 17</value>
   </metadata>
+  <metadata name="a3K_LibraryDataSet1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>485, 17</value>
+  </metadata>
   <metadata name="a3K_LibraryDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <metadata name="a3KLibraryDataSetBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>205, 17</value>
-  </metadata>
-  <metadata name="a3K_LibraryDataSet1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>485, 17</value>
   </metadata>
   <metadata name="bukuTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>870, 17</value>
@@ -318,7 +318,7 @@
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAroAAAHwCAYAAABJ1syOAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAQ6xJREFUeF7t3ed3VNe+r/n9N/Tr7r59zz3dp0fHe/ucvffdwTmAsTE5KkeQAJFz
+        wgAADsIBFShKgAAAQ6xJREFUeF7t3ed3VNe+r/n9N/Tr7r59zz3dp0fHe/ucvffdwTmAsTE5KkeQAJFz
         NIicc84ZDDYO4ATYONskZ4zJxsYEJXLUt+dvVi1pUS5sb7YDTD8a4zMEUkmIqtJcj6bmmusPDR9uqPKh
         5RozYoxGDx8NAAAA3LWsaa1trXH/YH84d/Kcrpy9oitVAAAAwF3MNa21rTXuH8aOGKvrZ69L1yRdBgAA
         AO5irmmtba1x/2BTvFa//h0XAAAAgLuYa1prW2tcQhcAAADhIHQBAAAQJEIXAAAAQSJ0AQAAECRCFwAA

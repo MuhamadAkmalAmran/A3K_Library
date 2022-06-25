@@ -38,17 +38,17 @@ namespace A3K_Library
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.a3K_LibraryDataSet = new A3K_Library.A3K_LibraryDataSet();
-            this.rakBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.rakTableAdapter = new A3K_Library.A3K_LibraryDataSetTableAdapters.RakTableAdapter();
             this.nomorRakDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kategoriRakDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lokasiRakDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rakBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.a3K_LibraryDataSet = new A3K_Library.A3K_LibraryDataSet();
+            this.rakTableAdapter = new A3K_Library.A3K_LibraryDataSetTableAdapters.RakTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rakBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -93,7 +93,7 @@ namespace A3K_Library
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(207, 98);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 32);
+            this.label1.Size = new System.Drawing.Size(67, 32);
             this.label1.TabIndex = 3;
             this.label1.Text = "Rak";
             // 
@@ -125,20 +125,7 @@ namespace A3K_Library
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.Size = new System.Drawing.Size(837, 227);
             this.dataGridView2.TabIndex = 6;
-            // 
-            // a3K_LibraryDataSet
-            // 
-            this.a3K_LibraryDataSet.DataSetName = "A3K_LibraryDataSet";
-            this.a3K_LibraryDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // rakBindingSource
-            // 
-            this.rakBindingSource.DataMember = "Rak";
-            this.rakBindingSource.DataSource = this.a3K_LibraryDataSet;
-            // 
-            // rakTableAdapter
-            // 
-            this.rakTableAdapter.ClearBeforeFill = true;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // nomorRakDataGridViewTextBoxColumn
             // 
@@ -164,6 +151,20 @@ namespace A3K_Library
             this.lokasiRakDataGridViewTextBoxColumn.Name = "lokasiRakDataGridViewTextBoxColumn";
             this.lokasiRakDataGridViewTextBoxColumn.Width = 125;
             // 
+            // rakBindingSource
+            // 
+            this.rakBindingSource.DataMember = "Rak";
+            this.rakBindingSource.DataSource = this.a3K_LibraryDataSet;
+            // 
+            // a3K_LibraryDataSet
+            // 
+            this.a3K_LibraryDataSet.DataSetName = "A3K_LibraryDataSet";
+            this.a3K_LibraryDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // rakTableAdapter
+            // 
+            this.rakTableAdapter.ClearBeforeFill = true;
+            // 
             // Form_Rak
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -186,8 +187,8 @@ namespace A3K_Library
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rakBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -30,5 +30,13 @@ namespace A3K_Library
             this.rakTableAdapter.Fill(this.a3K_LibraryDataSet.Rak);
 
         }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Form_DetailRak Rak1 = new Form_DetailRak();
+            Rak1.labelNoRak.Text = this.dataGridView2.CurrentRow.Cells[0].Value.ToString();
+            Rak1.labelKategoriRak.Text = this.dataGridView2.CurrentRow.Cells[1].Value.ToString();
+            Rak1.labelLokasiRak.Text = this.dataGridView2.CurrentRow.Cells[2].Value.ToString();
+        }
     }
 }
