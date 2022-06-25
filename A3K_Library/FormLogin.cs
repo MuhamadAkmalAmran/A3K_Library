@@ -23,6 +23,7 @@ namespace A3K_Library
             {
                 FormMenu menu = new FormMenu();
                 menu.Show();
+                this.Hide();
             }
             else
             {

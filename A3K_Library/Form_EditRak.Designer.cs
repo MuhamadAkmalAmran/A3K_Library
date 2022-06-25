@@ -38,6 +38,8 @@ namespace A3K_Library
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.saveRakBtn = new System.Windows.Forms.Button();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // txtCategoryEd
@@ -74,7 +76,7 @@ namespace A3K_Library
             this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(373, 194);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(130, 28);
+            this.label4.Size = new System.Drawing.Size(127, 27);
             this.label4.TabIndex = 12;
             this.label4.Text = "Nama Rak";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -86,7 +88,7 @@ namespace A3K_Library
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(373, 268);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(164, 28);
+            this.label3.Size = new System.Drawing.Size(159, 27);
             this.label3.TabIndex = 11;
             this.label3.Text = "Kategori Rak";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -98,7 +100,7 @@ namespace A3K_Library
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(373, 350);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(139, 28);
+            this.label2.Size = new System.Drawing.Size(135, 27);
             this.label2.TabIndex = 10;
             this.label2.Text = "Lokasi Rak";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -110,7 +112,7 @@ namespace A3K_Library
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(120, 104);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 32);
+            this.label1.Size = new System.Drawing.Size(129, 32);
             this.label1.TabIndex = 9;
             this.label1.Text = "Edit Rak";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -125,6 +127,17 @@ namespace A3K_Library
             this.saveRakBtn.UseVisualStyleBackColor = true;
             this.saveRakBtn.Click += new System.EventHandler(this.button1_Click);
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(22, 526);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 25;
+            this.pictureBox6.TabStop = false;
+            // 
             // Form_EditRak
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -132,6 +145,7 @@ namespace A3K_Library
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.txtCategoryEd);
             this.Controls.Add(this.txtLocEd);
             this.Controls.Add(this.txtNameEd);
@@ -144,6 +158,7 @@ namespace A3K_Library
             this.Name = "Form_EditRak";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_EditRak";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -159,5 +174,6 @@ namespace A3K_Library
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button saveRakBtn;
+        private System.Windows.Forms.PictureBox pictureBox6;
     }
 }
