@@ -29,6 +29,7 @@ namespace A3K_Library
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_DetailRak));
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,7 +39,12 @@ namespace A3K_Library
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.a3K_LibraryDataSet = new A3K_Library.A3K_LibraryDataSet();
+            this.rakBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.rakTableAdapter = new A3K_Library.A3K_LibraryDataSetTableAdapters.RakTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rakBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -48,9 +54,10 @@ namespace A3K_Library
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(260, 173);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 28);
+            this.label1.Size = new System.Drawing.Size(141, 28);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Nama Rak";
+            this.label1.Text = "Nomor Rak";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label3
             // 
@@ -68,6 +75,7 @@ namespace A3K_Library
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.rakBindingSource, "Lokasi_Rak", true));
             this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(522, 333);
             this.label4.Name = "label4";
@@ -79,6 +87,7 @@ namespace A3K_Library
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.rakBindingSource, "Kategori_Rak", true));
             this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(522, 251);
             this.label5.Name = "label5";
@@ -90,6 +99,7 @@ namespace A3K_Library
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.rakBindingSource, "Nomor_Rak", true));
             this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(522, 173);
             this.label6.Name = "label6";
@@ -131,6 +141,20 @@ namespace A3K_Library
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
+            // a3K_LibraryDataSet
+            // 
+            this.a3K_LibraryDataSet.DataSetName = "A3K_LibraryDataSet";
+            this.a3K_LibraryDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // rakBindingSource
+            // 
+            this.rakBindingSource.DataMember = "Rak";
+            this.rakBindingSource.DataSource = this.a3K_LibraryDataSet;
+            // 
+            // rakTableAdapter
+            // 
+            this.rakTableAdapter.ClearBeforeFill = true;
+            // 
             // Form_DetailRak
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -152,6 +176,8 @@ namespace A3K_Library
             this.Text = "Form_DetailRak";
             this.Load += new System.EventHandler(this.Form_Detail_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rakBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -167,5 +193,8 @@ namespace A3K_Library
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private A3K_LibraryDataSet a3K_LibraryDataSet;
+        private System.Windows.Forms.BindingSource rakBindingSource;
+        private A3K_LibraryDataSetTableAdapters.RakTableAdapter rakTableAdapter;
     }
 }

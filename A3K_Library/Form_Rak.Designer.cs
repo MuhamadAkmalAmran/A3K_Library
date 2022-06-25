@@ -29,6 +29,7 @@ namespace A3K_Library
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Rak));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
@@ -36,8 +37,18 @@ namespace A3K_Library
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.a3K_LibraryDataSet = new A3K_Library.A3K_LibraryDataSet();
+            this.rakBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.rakTableAdapter = new A3K_Library.A3K_LibraryDataSetTableAdapters.RakTableAdapter();
+            this.nomorRakDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.kategoriRakDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lokasiRakDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rakBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -98,6 +109,61 @@ namespace A3K_Library
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nomorRakDataGridViewTextBoxColumn,
+            this.kategoriRakDataGridViewTextBoxColumn,
+            this.lokasiRakDataGridViewTextBoxColumn});
+            this.dataGridView2.DataSource = this.rakBindingSource;
+            this.dataGridView2.Location = new System.Drawing.Point(213, 266);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(837, 227);
+            this.dataGridView2.TabIndex = 6;
+            // 
+            // a3K_LibraryDataSet
+            // 
+            this.a3K_LibraryDataSet.DataSetName = "A3K_LibraryDataSet";
+            this.a3K_LibraryDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // rakBindingSource
+            // 
+            this.rakBindingSource.DataMember = "Rak";
+            this.rakBindingSource.DataSource = this.a3K_LibraryDataSet;
+            // 
+            // rakTableAdapter
+            // 
+            this.rakTableAdapter.ClearBeforeFill = true;
+            // 
+            // nomorRakDataGridViewTextBoxColumn
+            // 
+            this.nomorRakDataGridViewTextBoxColumn.DataPropertyName = "Nomor_Rak";
+            this.nomorRakDataGridViewTextBoxColumn.HeaderText = "Nomor_Rak";
+            this.nomorRakDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nomorRakDataGridViewTextBoxColumn.Name = "nomorRakDataGridViewTextBoxColumn";
+            this.nomorRakDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // kategoriRakDataGridViewTextBoxColumn
+            // 
+            this.kategoriRakDataGridViewTextBoxColumn.DataPropertyName = "Kategori_Rak";
+            this.kategoriRakDataGridViewTextBoxColumn.HeaderText = "Kategori_Rak";
+            this.kategoriRakDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.kategoriRakDataGridViewTextBoxColumn.Name = "kategoriRakDataGridViewTextBoxColumn";
+            this.kategoriRakDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // lokasiRakDataGridViewTextBoxColumn
+            // 
+            this.lokasiRakDataGridViewTextBoxColumn.DataPropertyName = "Lokasi_Rak";
+            this.lokasiRakDataGridViewTextBoxColumn.HeaderText = "Lokasi_Rak";
+            this.lokasiRakDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.lokasiRakDataGridViewTextBoxColumn.Name = "lokasiRakDataGridViewTextBoxColumn";
+            this.lokasiRakDataGridViewTextBoxColumn.Width = 125;
+            // 
             // Form_Rak
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -106,6 +172,7 @@ namespace A3K_Library
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
@@ -115,8 +182,12 @@ namespace A3K_Library
             this.Name = "Form_Rak";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Rak";
+            this.Load += new System.EventHandler(this.Form_Rak_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rakBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -130,5 +201,12 @@ namespace A3K_Library
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private A3K_LibraryDataSet a3K_LibraryDataSet;
+        private System.Windows.Forms.BindingSource rakBindingSource;
+        private A3K_LibraryDataSetTableAdapters.RakTableAdapter rakTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomorRakDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn kategoriRakDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lokasiRakDataGridViewTextBoxColumn;
     }
 }

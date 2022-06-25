@@ -89,9 +89,9 @@ namespace A3K_Library
             this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(356, 164);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(130, 28);
+            this.label4.Size = new System.Drawing.Size(141, 28);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Nama Rak";
+            this.label4.Text = "Nomor Rak";
             // 
             // txtNameAdd
             // 
