@@ -45,8 +45,10 @@ namespace A3K_Library
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // label8
@@ -57,7 +59,7 @@ namespace A3K_Library
             this.label8.Location = new System.Drawing.Point(261, 185);
             this.label8.Name = "label8";
             this.label8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label8.Size = new System.Drawing.Size(226, 28);
+            this.label8.Size = new System.Drawing.Size(220, 27);
             this.label8.TabIndex = 14;
             this.label8.Text = "Nama Pustakawan";
             // 
@@ -68,7 +70,7 @@ namespace A3K_Library
             this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(261, 259);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(189, 28);
+            this.label7.Size = new System.Drawing.Size(183, 27);
             this.label7.TabIndex = 13;
             this.label7.Text = "Nomor Telepon";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -80,7 +82,7 @@ namespace A3K_Library
             this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(639, 111);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(83, 28);
+            this.label6.Size = new System.Drawing.Size(80, 27);
             this.label6.TabIndex = 12;
             this.label6.Text = "label6";
             // 
@@ -91,7 +93,7 @@ namespace A3K_Library
             this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(639, 186);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(83, 28);
+            this.label5.Size = new System.Drawing.Size(80, 27);
             this.label5.TabIndex = 11;
             this.label5.Text = "label5";
             // 
@@ -102,7 +104,7 @@ namespace A3K_Library
             this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(639, 261);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 28);
+            this.label4.Size = new System.Drawing.Size(80, 27);
             this.label4.TabIndex = 10;
             this.label4.Text = "label4";
             // 
@@ -113,7 +115,7 @@ namespace A3K_Library
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(55, 43);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 32);
+            this.label3.Size = new System.Drawing.Size(104, 32);
             this.label3.TabIndex = 9;
             this.label3.Text = "Profile";
             // 
@@ -124,7 +126,7 @@ namespace A3K_Library
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(261, 111);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(185, 28);
+            this.label1.Size = new System.Drawing.Size(179, 27);
             this.label1.TabIndex = 8;
             this.label1.Text = "ID Pustakawan";
             // 
@@ -136,7 +138,7 @@ namespace A3K_Library
             this.label2.Location = new System.Drawing.Point(261, 407);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label2.Size = new System.Drawing.Size(175, 28);
+            this.label2.Size = new System.Drawing.Size(168, 27);
             this.label2.TabIndex = 17;
             this.label2.Text = "Jenis Kelamin";
             // 
@@ -147,7 +149,7 @@ namespace A3K_Library
             this.label9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(261, 481);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(93, 28);
+            this.label9.Size = new System.Drawing.Size(91, 27);
             this.label9.TabIndex = 16;
             this.label9.Text = "Alamat";
             // 
@@ -158,7 +160,7 @@ namespace A3K_Library
             this.label10.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(261, 333);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(172, 28);
+            this.label10.Size = new System.Drawing.Size(166, 27);
             this.label10.TabIndex = 15;
             this.label10.Text = "Tanggal Lahir";
             // 
@@ -169,7 +171,7 @@ namespace A3K_Library
             this.label11.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(639, 336);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(97, 28);
+            this.label11.Size = new System.Drawing.Size(94, 27);
             this.label11.TabIndex = 20;
             this.label11.Text = "label11";
             // 
@@ -180,7 +182,7 @@ namespace A3K_Library
             this.label12.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(639, 411);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(97, 28);
+            this.label12.Size = new System.Drawing.Size(94, 27);
             this.label12.TabIndex = 19;
             this.label12.Text = "label12";
             // 
@@ -191,7 +193,7 @@ namespace A3K_Library
             this.label13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(639, 486);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(97, 28);
+            this.label13.Size = new System.Drawing.Size(94, 27);
             this.label13.TabIndex = 18;
             this.label13.Text = "label13";
             // 
@@ -218,6 +220,17 @@ namespace A3K_Library
             this.pictureBox2.TabIndex = 23;
             this.pictureBox2.TabStop = false;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(61, 525);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(42, 42);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 24;
+            this.pictureBox6.TabStop = false;
+            // 
             // Form_Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -225,6 +238,7 @@ namespace A3K_Library
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label11);
@@ -246,6 +260,7 @@ namespace A3K_Library
             this.Text = "Form_Profile";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -268,5 +283,6 @@ namespace A3K_Library
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox6;
     }
 }

@@ -21,7 +21,7 @@ namespace A3K_Library
         {
             FormMenu mn = new FormMenu();
             mn.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void Form_Book_Load(object sender, EventArgs e)
@@ -48,6 +48,8 @@ namespace A3K_Library
          
             Book1.labelEdisi.Text = this.dataGridView2.CurrentRow.Cells[11].Value.ToString();
             Book1.labelDeskripsi.Text = this.dataGridView2.CurrentRow.Cells[12].Value.ToString();
+            Book1.ShowDialog();
+
         }
     }
 }

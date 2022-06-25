@@ -38,5 +38,15 @@ namespace A3K_Library
             Rak1.labelKategoriRak.Text = this.dataGridView2.CurrentRow.Cells[1].Value.ToString();
             Rak1.labelLokasiRak.Text = this.dataGridView2.CurrentRow.Cells[2].Value.ToString();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

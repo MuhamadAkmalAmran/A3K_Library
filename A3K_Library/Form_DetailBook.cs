@@ -25,5 +25,23 @@ namespace A3K_Library
             this.bukuTableAdapter.Fill(this.a3K_LibraryDataSet1.Buku);
 
         }
+
+        private void editBookButton_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Form_EditBook FormEditBook = new Form_EditBook();
+            FormEditBook.ShowDialog();
+            this.Hide();
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

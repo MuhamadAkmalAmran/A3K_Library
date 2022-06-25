@@ -64,11 +64,15 @@ namespace A3K_Library
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bukuTableAdapter = new A3K_Library.A3K_LibraryDataSet1TableAdapters.BukuTableAdapter();
             this.bukuTableAdapter1 = new A3K_Library.A3K_LibraryDataSet2TableAdapters.BukuTableAdapter();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.bukuBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bukuBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // label13
@@ -411,6 +415,30 @@ namespace A3K_Library
             // 
             this.bukuTableAdapter1.ClearBeforeFill = true;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(1090, 329);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 53;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(1090, 413);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 54;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
             // Form_DetailBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -418,6 +446,8 @@ namespace A3K_Library
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelDeskripsi);
             this.Controls.Add(this.labelTarget);
@@ -455,6 +485,8 @@ namespace A3K_Library
             ((System.ComponentModel.ISupportInitialize)(this.bukuBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -495,5 +527,7 @@ namespace A3K_Library
         public System.Windows.Forms.Label labelKode;
         public System.Windows.Forms.Label labelPenulis;
         public System.Windows.Forms.Label labelJudul;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
