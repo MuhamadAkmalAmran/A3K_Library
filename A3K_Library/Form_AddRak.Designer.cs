@@ -31,12 +31,12 @@ namespace A3K_Library
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_AddRak));
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAddRak = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtNameAdd = new System.Windows.Forms.TextBox();
+            this.txtNoAdd = new System.Windows.Forms.TextBox();
             this.rakBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.a3K_LibraryDataSet = new A3K_Library.A3K_LibraryDataSet();
             this.txtLocAdd = new System.Windows.Forms.TextBox();
@@ -48,14 +48,15 @@ namespace A3K_Library
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnAddRak
             // 
-            this.button1.Location = new System.Drawing.Point(1001, 490);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 48);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAddRak.Location = new System.Drawing.Point(1001, 490);
+            this.btnAddRak.Name = "btnAddRak";
+            this.btnAddRak.Size = new System.Drawing.Size(124, 48);
+            this.btnAddRak.TabIndex = 0;
+            this.btnAddRak.Text = "Add";
+            this.btnAddRak.UseVisualStyleBackColor = true;
+            this.btnAddRak.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -64,7 +65,7 @@ namespace A3K_Library
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(103, 74);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(308, 32);
+            this.label1.Size = new System.Drawing.Size(309, 32);
             this.label1.TabIndex = 1;
             this.label1.Text = "Tambahkan Data Rak";
             // 
@@ -75,7 +76,7 @@ namespace A3K_Library
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(356, 320);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(135, 27);
+            this.label2.Size = new System.Drawing.Size(139, 28);
             this.label2.TabIndex = 2;
             this.label2.Text = "Lokasi Rak";
             // 
@@ -86,7 +87,7 @@ namespace A3K_Library
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(356, 238);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(159, 27);
+            this.label3.Size = new System.Drawing.Size(164, 28);
             this.label3.TabIndex = 3;
             this.label3.Text = "Kategori Rak";
             // 
@@ -97,18 +98,18 @@ namespace A3K_Library
             this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(356, 164);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(137, 27);
+            this.label4.Size = new System.Drawing.Size(141, 28);
             this.label4.TabIndex = 4;
             this.label4.Text = "Nomor Rak";
             // 
-            // txtNameAdd
+            // txtNoAdd
             // 
-            this.txtNameAdd.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.rakBindingSource, "Nomor_Rak", true));
-            this.txtNameAdd.Location = new System.Drawing.Point(604, 155);
-            this.txtNameAdd.Multiline = true;
-            this.txtNameAdd.Name = "txtNameAdd";
-            this.txtNameAdd.Size = new System.Drawing.Size(300, 50);
-            this.txtNameAdd.TabIndex = 5;
+            this.txtNoAdd.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.rakBindingSource, "Nomor_Rak", true));
+            this.txtNoAdd.Location = new System.Drawing.Point(604, 155);
+            this.txtNoAdd.Multiline = true;
+            this.txtNoAdd.Name = "txtNoAdd";
+            this.txtNoAdd.Size = new System.Drawing.Size(300, 50);
+            this.txtNoAdd.TabIndex = 5;
             // 
             // rakBindingSource
             // 
@@ -163,12 +164,12 @@ namespace A3K_Library
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.txtCategoryAdd);
             this.Controls.Add(this.txtLocAdd);
-            this.Controls.Add(this.txtNameAdd);
+            this.Controls.Add(this.txtNoAdd);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAddRak);
             this.DoubleBuffered = true;
             this.Name = "Form_AddRak";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -184,17 +185,17 @@ namespace A3K_Library
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAddRak;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtNameAdd;
-        private System.Windows.Forms.TextBox txtLocAdd;
-        private System.Windows.Forms.TextBox txtCategoryAdd;
         private A3K_LibraryDataSet a3K_LibraryDataSet;
         private System.Windows.Forms.BindingSource rakBindingSource;
         private A3K_LibraryDataSetTableAdapters.RakTableAdapter rakTableAdapter;
         private System.Windows.Forms.PictureBox pictureBox6;
+        public System.Windows.Forms.TextBox txtNoAdd;
+        public System.Windows.Forms.TextBox txtLocAdd;
+        public System.Windows.Forms.TextBox txtCategoryAdd;
     }
 }
