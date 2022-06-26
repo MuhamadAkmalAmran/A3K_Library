@@ -46,11 +46,7 @@ namespace A3K_Library
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.txtKodeBuku = new System.Windows.Forms.TextBox();
-            this.bukuBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.a3K_LibraryDataSet1 = new A3K_Library.A3K_LibraryDataSet1();
             this.txtKontenDigital = new System.Windows.Forms.TextBox();
-            this.bukuBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.a3K_LibraryDataSet2 = new A3K_Library.A3K_LibraryDataSet2();
             this.txtTargetPembaca = new System.Windows.Forms.TextBox();
             this.txtBahasa = new System.Windows.Forms.TextBox();
             this.txtSubjek = new System.Windows.Forms.TextBox();
@@ -62,14 +58,13 @@ namespace A3K_Library
             this.txtPenulisBuku = new System.Windows.Forms.TextBox();
             this.txtDeskripsiFisik = new System.Windows.Forms.TextBox();
             this.txtEdisi = new System.Windows.Forms.TextBox();
-            this.bukuTableAdapter = new A3K_Library.A3K_LibraryDataSet1TableAdapters.BukuTableAdapter();
-            this.bukuTableAdapter1 = new A3K_Library.A3K_LibraryDataSet2TableAdapters.BukuTableAdapter();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.bukuBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bukuBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet2)).BeginInit();
+            this.a3K_LibraryDataSet5 = new A3K_Library.A3K_LibraryDataSet5();
+            this.bukuBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bukuTableAdapter = new A3K_Library.A3K_LibraryDataSet5TableAdapters.BukuTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bukuBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
@@ -236,38 +231,18 @@ namespace A3K_Library
             this.txtKodeBuku.Size = new System.Drawing.Size(764, 30);
             this.txtKodeBuku.TabIndex = 26;
             // 
-            // bukuBindingSource
-            // 
-            this.bukuBindingSource.DataMember = "Buku";
-            this.bukuBindingSource.DataSource = this.a3K_LibraryDataSet1;
-            // 
-            // a3K_LibraryDataSet1
-            // 
-            this.a3K_LibraryDataSet1.DataSetName = "A3K_LibraryDataSet1";
-            this.a3K_LibraryDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // txtKontenDigital
             // 
-            this.txtKontenDigital.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource1, "Konten_Digital", true));
+            this.txtKontenDigital.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource, "Konten_Digital", true));
             this.txtKontenDigital.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtKontenDigital.Location = new System.Drawing.Point(317, 355);
             this.txtKontenDigital.Name = "txtKontenDigital";
             this.txtKontenDigital.Size = new System.Drawing.Size(764, 30);
             this.txtKontenDigital.TabIndex = 27;
             // 
-            // bukuBindingSource1
-            // 
-            this.bukuBindingSource1.DataMember = "Buku";
-            this.bukuBindingSource1.DataSource = this.a3K_LibraryDataSet2;
-            // 
-            // a3K_LibraryDataSet2
-            // 
-            this.a3K_LibraryDataSet2.DataSetName = "A3K_LibraryDataSet2";
-            this.a3K_LibraryDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // txtTargetPembaca
             // 
-            this.txtTargetPembaca.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource1, "Target_Pembaca", true));
+            this.txtTargetPembaca.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource, "Target_Pembaca", true));
             this.txtTargetPembaca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTargetPembaca.Location = new System.Drawing.Point(317, 397);
             this.txtTargetPembaca.Name = "txtTargetPembaca";
@@ -276,7 +251,7 @@ namespace A3K_Library
             // 
             // txtBahasa
             // 
-            this.txtBahasa.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource1, "Bahasa", true));
+            this.txtBahasa.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource, "Bahasa", true));
             this.txtBahasa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBahasa.Location = new System.Drawing.Point(317, 439);
             this.txtBahasa.Name = "txtBahasa";
@@ -285,7 +260,7 @@ namespace A3K_Library
             // 
             // txtSubjek
             // 
-            this.txtSubjek.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource1, "Subjek", true));
+            this.txtSubjek.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource, "Subjek", true));
             this.txtSubjek.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSubjek.Location = new System.Drawing.Point(317, 271);
             this.txtSubjek.Name = "txtSubjek";
@@ -294,7 +269,7 @@ namespace A3K_Library
             // 
             // txtTahunTerbit
             // 
-            this.txtTahunTerbit.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource1, "Tahun_Terbit", true));
+            this.txtTahunTerbit.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource, "Tahun_Terbit", true));
             this.txtTahunTerbit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTahunTerbit.Location = new System.Drawing.Point(317, 313);
             this.txtTahunTerbit.Name = "txtTahunTerbit";
@@ -312,7 +287,7 @@ namespace A3K_Library
             // 
             // txtEksemplarBuku
             // 
-            this.txtEksemplarBuku.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource1, "Eksemplar_Buku", true));
+            this.txtEksemplarBuku.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource, "Eksemplar_Buku", true));
             this.txtEksemplarBuku.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEksemplarBuku.Location = new System.Drawing.Point(317, 229);
             this.txtEksemplarBuku.Name = "txtEksemplarBuku";
@@ -341,14 +316,14 @@ namespace A3K_Library
             // 
             this.txtPenulisBuku.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource, "Penulis_Buku", true));
             this.txtPenulisBuku.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPenulisBuku.Location = new System.Drawing.Point(317, 61);
+            this.txtPenulisBuku.Location = new System.Drawing.Point(317, 60);
             this.txtPenulisBuku.Name = "txtPenulisBuku";
             this.txtPenulisBuku.Size = new System.Drawing.Size(764, 30);
             this.txtPenulisBuku.TabIndex = 36;
             // 
             // txtDeskripsiFisik
             // 
-            this.txtDeskripsiFisik.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource1, "Deskripsi_Fisik", true));
+            this.txtDeskripsiFisik.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource, "Deskripsi_Fisik", true));
             this.txtDeskripsiFisik.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDeskripsiFisik.Location = new System.Drawing.Point(317, 523);
             this.txtDeskripsiFisik.Name = "txtDeskripsiFisik";
@@ -358,20 +333,12 @@ namespace A3K_Library
             // 
             // txtEdisi
             // 
-            this.txtEdisi.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource1, "Edisi", true));
+            this.txtEdisi.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource, "Bahasa", true));
             this.txtEdisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEdisi.Location = new System.Drawing.Point(317, 481);
             this.txtEdisi.Name = "txtEdisi";
             this.txtEdisi.Size = new System.Drawing.Size(764, 30);
             this.txtEdisi.TabIndex = 38;
-            // 
-            // bukuTableAdapter
-            // 
-            this.bukuTableAdapter.ClearBeforeFill = true;
-            // 
-            // bukuTableAdapter1
-            // 
-            this.bukuTableAdapter1.ClearBeforeFill = true;
             // 
             // pictureBox6
             // 
@@ -383,6 +350,20 @@ namespace A3K_Library
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 39;
             this.pictureBox6.TabStop = false;
+            // 
+            // a3K_LibraryDataSet5
+            // 
+            this.a3K_LibraryDataSet5.DataSetName = "A3K_LibraryDataSet5";
+            this.a3K_LibraryDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bukuBindingSource
+            // 
+            this.bukuBindingSource.DataMember = "Buku";
+            this.bukuBindingSource.DataSource = this.a3K_LibraryDataSet5;
+            // 
+            // bukuTableAdapter
+            // 
+            this.bukuTableAdapter.ClearBeforeFill = true;
             // 
             // Form_AddBook
             // 
@@ -424,11 +405,9 @@ namespace A3K_Library
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_AddBook";
             this.Load += new System.EventHandler(this.Form_AddBook_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.bukuBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bukuBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bukuBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -449,25 +428,22 @@ namespace A3K_Library
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox txtKodeBuku;
-        private System.Windows.Forms.TextBox txtKontenDigital;
-        private System.Windows.Forms.TextBox txtTargetPembaca;
-        private System.Windows.Forms.TextBox txtBahasa;
-        private System.Windows.Forms.TextBox txtSubjek;
-        private System.Windows.Forms.TextBox txtTahunTerbit;
-        private System.Windows.Forms.TextBox txtPenerbit;
-        private System.Windows.Forms.TextBox txtEksemplarBuku;
-        private System.Windows.Forms.TextBox txtISBN;
-        private System.Windows.Forms.TextBox txtJudulBuku;
-        private System.Windows.Forms.TextBox txtPenulisBuku;
-        private System.Windows.Forms.TextBox txtDeskripsiFisik;
-        private System.Windows.Forms.TextBox txtEdisi;
-        private A3K_LibraryDataSet1 a3K_LibraryDataSet1;
-        private System.Windows.Forms.BindingSource bukuBindingSource;
-        private A3K_LibraryDataSet1TableAdapters.BukuTableAdapter bukuTableAdapter;
-        private A3K_LibraryDataSet2 a3K_LibraryDataSet2;
-        private System.Windows.Forms.BindingSource bukuBindingSource1;
-        private A3K_LibraryDataSet2TableAdapters.BukuTableAdapter bukuTableAdapter1;
         private System.Windows.Forms.PictureBox pictureBox6;
+        public System.Windows.Forms.TextBox txtKodeBuku;
+        public System.Windows.Forms.TextBox txtKontenDigital;
+        public System.Windows.Forms.TextBox txtTargetPembaca;
+        public System.Windows.Forms.TextBox txtBahasa;
+        public System.Windows.Forms.TextBox txtSubjek;
+        public System.Windows.Forms.TextBox txtTahunTerbit;
+        public System.Windows.Forms.TextBox txtPenerbit;
+        public System.Windows.Forms.TextBox txtEksemplarBuku;
+        public System.Windows.Forms.TextBox txtISBN;
+        public System.Windows.Forms.TextBox txtJudulBuku;
+        public System.Windows.Forms.TextBox txtPenulisBuku;
+        public System.Windows.Forms.TextBox txtDeskripsiFisik;
+        public System.Windows.Forms.TextBox txtEdisi;
+        private A3K_LibraryDataSet5 a3K_LibraryDataSet5;
+        private System.Windows.Forms.BindingSource bukuBindingSource;
+        private A3K_LibraryDataSet5TableAdapters.BukuTableAdapter bukuTableAdapter;
     }
 }

@@ -20,8 +20,7 @@ namespace A3K_Library
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            FormMenu mn = new FormMenu();
-            mn.Show();
+            new FormMenu().Show();
             this.Close();
         }
 
@@ -106,6 +105,12 @@ namespace A3K_Library
         private void dataGridRak_CellClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            new FormMenu().Show();
+            this.Close();
         }
     }
 }

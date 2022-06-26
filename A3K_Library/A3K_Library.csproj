@@ -62,6 +62,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>A3K_LibraryDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="A3K_LibraryDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>A3K_LibraryDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="A3K_LibraryDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>A3K_LibraryDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="A3K_LibraryDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>A3K_LibraryDataSet5.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -213,6 +228,39 @@
     </None>
     <None Include="A3K_LibraryDataSet2.xss">
       <DependentUpon>A3K_LibraryDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="A3K_LibraryDataSet3.xsc">
+      <DependentUpon>A3K_LibraryDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="A3K_LibraryDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>A3K_LibraryDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="A3K_LibraryDataSet3.xss">
+      <DependentUpon>A3K_LibraryDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="A3K_LibraryDataSet4.xsc">
+      <DependentUpon>A3K_LibraryDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="A3K_LibraryDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>A3K_LibraryDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="A3K_LibraryDataSet4.xss">
+      <DependentUpon>A3K_LibraryDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="A3K_LibraryDataSet5.xsc">
+      <DependentUpon>A3K_LibraryDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="A3K_LibraryDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>A3K_LibraryDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="A3K_LibraryDataSet5.xss">
+      <DependentUpon>A3K_LibraryDataSet5.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

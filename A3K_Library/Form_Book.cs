@@ -26,8 +26,8 @@ namespace A3K_Library
 
         private void Form_Book_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'a3K_LibraryDataSet1.Buku' table. You can move, or remove it, as needed.
-            this.bukuTableAdapter.Fill(this.a3K_LibraryDataSet1.Buku);
+            // TODO: This line of code loads data into the 'a3K_LibraryDataSet4.Buku' table. You can move, or remove it, as needed.
+            this.bukuTableAdapter.Fill(this.a3K_LibraryDataSet4.Buku);
 
         }
 
@@ -56,6 +56,28 @@ namespace A3K_Library
         {
             new Form_AddBook().Show();
             this.Hide();
+        }
+
+        private void dataGridView2_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (MessageBox.Show("Do you want to save the changes?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    //End edit data & save
+                    bukuBindingSource.EndEdit();
+                    bukuTableAdapter.Update(a3K_LibraryDataSet4);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
