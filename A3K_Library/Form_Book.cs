@@ -51,5 +51,11 @@ namespace A3K_Library
             Book1.ShowDialog();
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            new Form_AddBook().Show();
+            this.Hide();
+        }
     }
 }

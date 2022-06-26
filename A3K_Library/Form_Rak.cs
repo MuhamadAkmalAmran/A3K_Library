@@ -12,7 +12,7 @@ namespace A3K_Library
 {
     public partial class Form_Rak : Form
     {
-        
+        int selectRow;
         public Form_Rak()
         {
             InitializeComponent();
@@ -31,16 +31,29 @@ namespace A3K_Library
             this.rakTableAdapter.Fill(this.a3K_LibraryDataSet.Rak);
         }
 
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        public void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             Form_DetailRak Rak1 = new Form_DetailRak();
             Rak1.labelNoRak.Text = this.dataGridRak.CurrentRow.Cells[0].Value.ToString();
             Rak1.labelKategoriRak.Text = this.dataGridRak.CurrentRow.Cells[1].Value.ToString();
             Rak1.labelLokasiRak.Text = this.dataGridRak.CurrentRow.Cells[2].Value.ToString();
+
+            // get datagridview selected row
+            selectRow = e.RowIndex;
+
+            DataGridViewRow row = dataGridRak.Rows[selectRow];
+            // display datagridview selected row data into textboxes
+            Form_EditRak ER = new Form_EditRak();
+            ER.txtNameEd.Text = row.Cells[0].Value.ToString();
+            ER.txtCategoryEd.Text = row.Cells[1].Value.ToString();
+            ER.txtLocEd.Text = row.Cells[2].Value.ToString();
+            ER.Show();
+            this.Hide();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+            
             new Form_EditRak().Show();
             this.Hide();
         }
@@ -87,6 +100,12 @@ namespace A3K_Library
             {
                 MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+
+        private void dataGridRak_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

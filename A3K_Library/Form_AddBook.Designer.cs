@@ -34,7 +34,7 @@ namespace A3K_Library
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAddBook = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -45,23 +45,23 @@ namespace A3K_Library
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtKodeBuku = new System.Windows.Forms.TextBox();
             this.bukuBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.a3K_LibraryDataSet1 = new A3K_Library.A3K_LibraryDataSet1();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtKontenDigital = new System.Windows.Forms.TextBox();
             this.bukuBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.a3K_LibraryDataSet2 = new A3K_Library.A3K_LibraryDataSet2();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.txtTargetPembaca = new System.Windows.Forms.TextBox();
+            this.txtBahasa = new System.Windows.Forms.TextBox();
+            this.txtSubjek = new System.Windows.Forms.TextBox();
+            this.txtTahunTerbit = new System.Windows.Forms.TextBox();
+            this.txtPenerbit = new System.Windows.Forms.TextBox();
+            this.txtEksemplarBuku = new System.Windows.Forms.TextBox();
+            this.txtISBN = new System.Windows.Forms.TextBox();
+            this.txtJudulBuku = new System.Windows.Forms.TextBox();
+            this.txtPenulisBuku = new System.Windows.Forms.TextBox();
+            this.txtDeskripsiFisik = new System.Windows.Forms.TextBox();
+            this.txtEdisi = new System.Windows.Forms.TextBox();
             this.bukuTableAdapter = new A3K_Library.A3K_LibraryDataSet1TableAdapters.BukuTableAdapter();
             this.bukuTableAdapter1 = new A3K_Library.A3K_LibraryDataSet2TableAdapters.BukuTableAdapter();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -107,14 +107,15 @@ namespace A3K_Library
             this.label2.TabIndex = 10;
             this.label2.Text = "Judul Buku";
             // 
-            // button1
+            // btnAddBook
             // 
-            this.button1.Location = new System.Drawing.Point(1112, 505);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 48);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAddBook.Location = new System.Drawing.Point(1112, 505);
+            this.btnAddBook.Name = "btnAddBook";
+            this.btnAddBook.Size = new System.Drawing.Size(124, 48);
+            this.btnAddBook.TabIndex = 8;
+            this.btnAddBook.Text = "Add";
+            this.btnAddBook.UseVisualStyleBackColor = true;
+            this.btnAddBook.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -226,14 +227,14 @@ namespace A3K_Library
             this.label13.TabIndex = 25;
             this.label13.Text = "Deskripsi Fisik";
             // 
-            // textBox1
+            // txtKodeBuku
             // 
-            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource, "Kode_Buku", true));
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(317, 19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(764, 30);
-            this.textBox1.TabIndex = 26;
+            this.txtKodeBuku.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource, "Kode_Buku", true));
+            this.txtKodeBuku.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKodeBuku.Location = new System.Drawing.Point(317, 19);
+            this.txtKodeBuku.Name = "txtKodeBuku";
+            this.txtKodeBuku.Size = new System.Drawing.Size(764, 30);
+            this.txtKodeBuku.TabIndex = 26;
             // 
             // bukuBindingSource
             // 
@@ -245,14 +246,14 @@ namespace A3K_Library
             this.a3K_LibraryDataSet1.DataSetName = "A3K_LibraryDataSet1";
             this.a3K_LibraryDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // textBox2
+            // txtKontenDigital
             // 
-            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource1, "Konten_Digital", true));
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(317, 355);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(764, 30);
-            this.textBox2.TabIndex = 27;
+            this.txtKontenDigital.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource1, "Konten_Digital", true));
+            this.txtKontenDigital.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKontenDigital.Location = new System.Drawing.Point(317, 355);
+            this.txtKontenDigital.Name = "txtKontenDigital";
+            this.txtKontenDigital.Size = new System.Drawing.Size(764, 30);
+            this.txtKontenDigital.TabIndex = 27;
             // 
             // bukuBindingSource1
             // 
@@ -264,105 +265,105 @@ namespace A3K_Library
             this.a3K_LibraryDataSet2.DataSetName = "A3K_LibraryDataSet2";
             this.a3K_LibraryDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // textBox3
+            // txtTargetPembaca
             // 
-            this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource1, "Target_Pembaca", true));
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(317, 397);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(764, 30);
-            this.textBox3.TabIndex = 28;
+            this.txtTargetPembaca.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource1, "Target_Pembaca", true));
+            this.txtTargetPembaca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTargetPembaca.Location = new System.Drawing.Point(317, 397);
+            this.txtTargetPembaca.Name = "txtTargetPembaca";
+            this.txtTargetPembaca.Size = new System.Drawing.Size(764, 30);
+            this.txtTargetPembaca.TabIndex = 28;
             // 
-            // textBox4
+            // txtBahasa
             // 
-            this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource1, "Bahasa", true));
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(317, 439);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(764, 30);
-            this.textBox4.TabIndex = 29;
+            this.txtBahasa.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource1, "Bahasa", true));
+            this.txtBahasa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBahasa.Location = new System.Drawing.Point(317, 439);
+            this.txtBahasa.Name = "txtBahasa";
+            this.txtBahasa.Size = new System.Drawing.Size(764, 30);
+            this.txtBahasa.TabIndex = 29;
             // 
-            // textBox5
+            // txtSubjek
             // 
-            this.textBox5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource1, "Subjek", true));
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(317, 271);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(764, 30);
-            this.textBox5.TabIndex = 30;
+            this.txtSubjek.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource1, "Subjek", true));
+            this.txtSubjek.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSubjek.Location = new System.Drawing.Point(317, 271);
+            this.txtSubjek.Name = "txtSubjek";
+            this.txtSubjek.Size = new System.Drawing.Size(764, 30);
+            this.txtSubjek.TabIndex = 30;
             // 
-            // textBox6
+            // txtTahunTerbit
             // 
-            this.textBox6.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource1, "Tahun_Terbit", true));
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(317, 313);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(764, 30);
-            this.textBox6.TabIndex = 31;
+            this.txtTahunTerbit.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource1, "Tahun_Terbit", true));
+            this.txtTahunTerbit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTahunTerbit.Location = new System.Drawing.Point(317, 313);
+            this.txtTahunTerbit.Name = "txtTahunTerbit";
+            this.txtTahunTerbit.Size = new System.Drawing.Size(764, 30);
+            this.txtTahunTerbit.TabIndex = 31;
             // 
-            // textBox7
+            // txtPenerbit
             // 
-            this.textBox7.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource, "Penerbit", true));
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(317, 187);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(764, 30);
-            this.textBox7.TabIndex = 32;
+            this.txtPenerbit.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource, "Penerbit", true));
+            this.txtPenerbit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPenerbit.Location = new System.Drawing.Point(317, 187);
+            this.txtPenerbit.Name = "txtPenerbit";
+            this.txtPenerbit.Size = new System.Drawing.Size(764, 30);
+            this.txtPenerbit.TabIndex = 32;
             // 
-            // textBox8
+            // txtEksemplarBuku
             // 
-            this.textBox8.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource1, "Eksemplar_Buku", true));
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(317, 229);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(764, 30);
-            this.textBox8.TabIndex = 33;
+            this.txtEksemplarBuku.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource1, "Eksemplar_Buku", true));
+            this.txtEksemplarBuku.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEksemplarBuku.Location = new System.Drawing.Point(317, 229);
+            this.txtEksemplarBuku.Name = "txtEksemplarBuku";
+            this.txtEksemplarBuku.Size = new System.Drawing.Size(764, 30);
+            this.txtEksemplarBuku.TabIndex = 33;
             // 
-            // textBox9
+            // txtISBN
             // 
-            this.textBox9.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource, "ISBN", true));
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(317, 145);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(764, 30);
-            this.textBox9.TabIndex = 34;
+            this.txtISBN.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource, "ISBN", true));
+            this.txtISBN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtISBN.Location = new System.Drawing.Point(317, 145);
+            this.txtISBN.Name = "txtISBN";
+            this.txtISBN.Size = new System.Drawing.Size(764, 30);
+            this.txtISBN.TabIndex = 34;
             // 
-            // textBox10
+            // txtJudulBuku
             // 
-            this.textBox10.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource, "Judul_Buku", true));
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(317, 103);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(764, 30);
-            this.textBox10.TabIndex = 35;
+            this.txtJudulBuku.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource, "Judul_Buku", true));
+            this.txtJudulBuku.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtJudulBuku.Location = new System.Drawing.Point(317, 103);
+            this.txtJudulBuku.Name = "txtJudulBuku";
+            this.txtJudulBuku.Size = new System.Drawing.Size(764, 30);
+            this.txtJudulBuku.TabIndex = 35;
             // 
-            // textBox11
+            // txtPenulisBuku
             // 
-            this.textBox11.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource, "Penulis_Buku", true));
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(317, 61);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(764, 30);
-            this.textBox11.TabIndex = 36;
+            this.txtPenulisBuku.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource, "Penulis_Buku", true));
+            this.txtPenulisBuku.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPenulisBuku.Location = new System.Drawing.Point(317, 61);
+            this.txtPenulisBuku.Name = "txtPenulisBuku";
+            this.txtPenulisBuku.Size = new System.Drawing.Size(764, 30);
+            this.txtPenulisBuku.TabIndex = 36;
             // 
-            // textBox12
+            // txtDeskripsiFisik
             // 
-            this.textBox12.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource1, "Deskripsi_Fisik", true));
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(317, 523);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(764, 30);
-            this.textBox12.TabIndex = 37;
-            this.textBox12.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
+            this.txtDeskripsiFisik.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource1, "Deskripsi_Fisik", true));
+            this.txtDeskripsiFisik.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDeskripsiFisik.Location = new System.Drawing.Point(317, 523);
+            this.txtDeskripsiFisik.Name = "txtDeskripsiFisik";
+            this.txtDeskripsiFisik.Size = new System.Drawing.Size(764, 30);
+            this.txtDeskripsiFisik.TabIndex = 37;
+            this.txtDeskripsiFisik.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
             // 
-            // textBox13
+            // txtEdisi
             // 
-            this.textBox13.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource1, "Edisi", true));
-            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(317, 481);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(764, 30);
-            this.textBox13.TabIndex = 38;
+            this.txtEdisi.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource1, "Edisi", true));
+            this.txtEdisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEdisi.Location = new System.Drawing.Point(317, 481);
+            this.txtEdisi.Name = "txtEdisi";
+            this.txtEdisi.Size = new System.Drawing.Size(764, 30);
+            this.txtEdisi.TabIndex = 38;
             // 
             // bukuTableAdapter
             // 
@@ -391,19 +392,19 @@ namespace A3K_Library
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1262, 673);
             this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtEdisi);
+            this.Controls.Add(this.txtDeskripsiFisik);
+            this.Controls.Add(this.txtPenulisBuku);
+            this.Controls.Add(this.txtJudulBuku);
+            this.Controls.Add(this.txtISBN);
+            this.Controls.Add(this.txtEksemplarBuku);
+            this.Controls.Add(this.txtPenerbit);
+            this.Controls.Add(this.txtTahunTerbit);
+            this.Controls.Add(this.txtSubjek);
+            this.Controls.Add(this.txtBahasa);
+            this.Controls.Add(this.txtTargetPembaca);
+            this.Controls.Add(this.txtKontenDigital);
+            this.Controls.Add(this.txtKodeBuku);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
@@ -417,7 +418,7 @@ namespace A3K_Library
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAddBook);
             this.DoubleBuffered = true;
             this.Name = "Form_AddBook";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -437,7 +438,7 @@ namespace A3K_Library
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAddBook;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -448,19 +449,19 @@ namespace A3K_Library
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox txtKodeBuku;
+        private System.Windows.Forms.TextBox txtKontenDigital;
+        private System.Windows.Forms.TextBox txtTargetPembaca;
+        private System.Windows.Forms.TextBox txtBahasa;
+        private System.Windows.Forms.TextBox txtSubjek;
+        private System.Windows.Forms.TextBox txtTahunTerbit;
+        private System.Windows.Forms.TextBox txtPenerbit;
+        private System.Windows.Forms.TextBox txtEksemplarBuku;
+        private System.Windows.Forms.TextBox txtISBN;
+        private System.Windows.Forms.TextBox txtJudulBuku;
+        private System.Windows.Forms.TextBox txtPenulisBuku;
+        private System.Windows.Forms.TextBox txtDeskripsiFisik;
+        private System.Windows.Forms.TextBox txtEdisi;
         private A3K_LibraryDataSet1 a3K_LibraryDataSet1;
         private System.Windows.Forms.BindingSource bukuBindingSource;
         private A3K_LibraryDataSet1TableAdapters.BukuTableAdapter bukuTableAdapter;

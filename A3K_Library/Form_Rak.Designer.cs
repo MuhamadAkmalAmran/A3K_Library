@@ -128,6 +128,7 @@ namespace A3K_Library
             this.dataGridRak.RowTemplate.Height = 24;
             this.dataGridRak.Size = new System.Drawing.Size(837, 227);
             this.dataGridRak.TabIndex = 6;
+            this.dataGridRak.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridRak_CellClick);
             this.dataGridRak.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // nomorRakDataGridViewTextBoxColumn
@@ -298,7 +299,6 @@ namespace A3K_Library
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DataGridView dataGridRak;
         private A3K_LibraryDataSet a3K_LibraryDataSet;
         private System.Windows.Forms.BindingSource rakBindingSource;
         private A3K_LibraryDataSetTableAdapters.RakTableAdapter rakTableAdapter;
@@ -312,5 +312,6 @@ namespace A3K_Library
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
+        public System.Windows.Forms.DataGridView dataGridRak;
     }
 }

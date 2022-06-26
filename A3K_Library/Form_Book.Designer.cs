@@ -85,7 +85,7 @@ namespace A3K_Library
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(210, 139);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 32);
+            this.label1.Size = new System.Drawing.Size(85, 32);
             this.label1.TabIndex = 9;
             this.label1.Text = "Buku";
             // 
@@ -305,6 +305,7 @@ namespace A3K_Library
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox5
             // 
