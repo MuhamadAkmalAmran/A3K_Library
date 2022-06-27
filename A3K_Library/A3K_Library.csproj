@@ -77,6 +77,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>A3K_LibraryDataSet5.xsd</DependentUpon>
     </Compile>
+    <Compile Include="A3K_LibraryDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>A3K_LibraryDataSet6.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -262,6 +267,17 @@
     </None>
     <None Include="A3K_LibraryDataSet5.xss">
       <DependentUpon>A3K_LibraryDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="A3K_LibraryDataSet6.xsc">
+      <DependentUpon>A3K_LibraryDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="A3K_LibraryDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>A3K_LibraryDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="A3K_LibraryDataSet6.xss">
+      <DependentUpon>A3K_LibraryDataSet6.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

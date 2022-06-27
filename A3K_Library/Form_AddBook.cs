@@ -7,14 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace A3K_Library
 {
     public partial class Form_AddBook : Form
     {
-
-        DataTable dt;
-        DataRow dr;
+        private SqlCommand cmd;
+        Koneksi conn = new Koneksi();
+        Form_Book fb = new Form_Book();
         public Form_AddBook()
         {
             InitializeComponent();
@@ -38,26 +39,32 @@ namespace A3K_Library
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dt = a3K_LibraryDataSet5.Tables["Buku"];
-            dr = dt.NewRow();
-            dr[0] = txtKodeBuku.Text;
-            dr[1] = txtPenulisBuku.Text;
-            dr[2] = txtJudulBuku.Text;
-            dr[3] = txtISBN.Text;
-            dr[4] = txtPenerbit.Text;
-            dr[5] = txtEksemplarBuku.Text;
-            dr[6] = txtSubjek.Text;
-            dr[7] = txtTahunTerbit.Text;
-            dr[9] = txtKontenDigital.Text;
-            dr[10] = txtTargetPembaca.Text;
-            dr[11] = txtBahasa.Text;
-            dr[12] = txtEdisi.Text;
-            dr[13] = txtDeskripsiFisik.Text;
-            dt.Rows.Add(dr);
-            bukuTableAdapter.Update(a3K_LibraryDataSet5);
-            txtKodeBuku.Text = System.Convert.ToString(dr[0]);
-            this.bukuTableAdapter.Fill(this.a3K_LibraryDataSet5.Buku);
-            btnAddBook.Enabled = false;
+
+            if (txtKodeBuku.Text.Trim() == "" || txtJudulBuku.Text.Trim() == "" || txtPenulisBuku.Text.Trim() == "" || txtISBN.Text.Trim() == "" || txtPenerbit.Text.Trim() == "" || txtEksemplarBuku.Text.Trim() == "" || txtSubjek.Text.Trim() == "" || txtTahunTerbit.Text.Trim() == "" || txtKontenDigital.Text.Trim() == "" || txtTargetPembaca.Text.Trim() == "" || txtBahasa.Text.Trim() == "" || txtEdisi.Text.Trim() == "" || txtDeskripsiFisik.Text.Trim() == "" )
+            {
+                MessageBox.Show("Data Belum diisi!");
+            }
+            else
+            {
+                SqlConnection conect = conn.GetConn();
+                try
+                {
+                    cmd = new SqlCommand("insert into Buku values ('" + txtKodeBuku.Text + "', '" + txtPenulisBuku.Text + "', '" + txtJudulBuku.Text + "', , '" + txtISBN.Text + "', '" + txtPenerbit.Text + "', '" + txtEksemplarBuku.Text + "', '" + txtSubjek.Text + "', '" + txtTahunTerbit.Text + "', '" + txtKontenDigital.Text + "', '" + txtTargetPembaca.Text + "', '" + txtBahasa.Text + "', '" + txtEdisi.Text + "', '" + txtDeskripsiFisik.Text + "')", conect);
+                    conect.Open();
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Data Berhasi diSimpan");
+                    fb.Show();
+                    this.Close();
+                }
+                catch (Exception x)
+                {
+                    MessageBox.Show(x.ToString());
+                }
+            }
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
             new Form_Book().Show();
             this.Close();
         }

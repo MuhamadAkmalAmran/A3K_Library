@@ -56,7 +56,7 @@ namespace A3K_Library
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(260, 173);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 27);
+            this.label1.Size = new System.Drawing.Size(141, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nomor Rak";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -68,7 +68,7 @@ namespace A3K_Library
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(91, 95);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(155, 32);
+            this.label3.Size = new System.Drawing.Size(156, 32);
             this.label3.TabIndex = 2;
             this.label3.Text = "Detail Rak";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -77,11 +77,10 @@ namespace A3K_Library
             // 
             this.labelLokasiRak.AutoSize = true;
             this.labelLokasiRak.BackColor = System.Drawing.Color.Transparent;
-            this.labelLokasiRak.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.rakBindingSource, "Lokasi_Rak", true));
             this.labelLokasiRak.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelLokasiRak.Location = new System.Drawing.Point(522, 333);
             this.labelLokasiRak.Name = "labelLokasiRak";
-            this.labelLokasiRak.Size = new System.Drawing.Size(80, 27);
+            this.labelLokasiRak.Size = new System.Drawing.Size(83, 28);
             this.labelLokasiRak.TabIndex = 3;
             this.labelLokasiRak.Text = "label4";
             // 
@@ -99,11 +98,10 @@ namespace A3K_Library
             // 
             this.labelKategoriRak.AutoSize = true;
             this.labelKategoriRak.BackColor = System.Drawing.Color.Transparent;
-            this.labelKategoriRak.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.rakBindingSource, "Kategori_Rak", true));
             this.labelKategoriRak.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelKategoriRak.Location = new System.Drawing.Point(522, 251);
             this.labelKategoriRak.Name = "labelKategoriRak";
-            this.labelKategoriRak.Size = new System.Drawing.Size(80, 27);
+            this.labelKategoriRak.Size = new System.Drawing.Size(83, 28);
             this.labelKategoriRak.TabIndex = 4;
             this.labelKategoriRak.Text = "label5";
             // 
@@ -111,11 +109,10 @@ namespace A3K_Library
             // 
             this.labelNoRak.AutoSize = true;
             this.labelNoRak.BackColor = System.Drawing.Color.Transparent;
-            this.labelNoRak.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.rakBindingSource, "Nomor_Rak", true));
             this.labelNoRak.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNoRak.Location = new System.Drawing.Point(522, 173);
             this.labelNoRak.Name = "labelNoRak";
-            this.labelNoRak.Size = new System.Drawing.Size(80, 27);
+            this.labelNoRak.Size = new System.Drawing.Size(83, 28);
             this.labelNoRak.TabIndex = 5;
             this.labelNoRak.Text = "label6";
             // 
@@ -126,7 +123,7 @@ namespace A3K_Library
             this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(260, 333);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(135, 27);
+            this.label7.Size = new System.Drawing.Size(139, 28);
             this.label7.TabIndex = 6;
             this.label7.Text = "Lokasi Rak";
             // 
@@ -138,7 +135,7 @@ namespace A3K_Library
             this.label8.Location = new System.Drawing.Point(260, 251);
             this.label8.Name = "label8";
             this.label8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label8.Size = new System.Drawing.Size(159, 27);
+            this.label8.Size = new System.Drawing.Size(164, 28);
             this.label8.TabIndex = 7;
             this.label8.Text = "Kategori Rak";
             // 
@@ -152,6 +149,7 @@ namespace A3K_Library
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // rakTableAdapter
             // 
@@ -167,6 +165,7 @@ namespace A3K_Library
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 25;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // Form_DetailRak
             // 

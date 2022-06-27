@@ -33,5 +33,17 @@ namespace A3K_Library
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            new FormMenu();
+            this.Close();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            new Form_Rak().Show();
+            this.Close();
+        }
     }
 }

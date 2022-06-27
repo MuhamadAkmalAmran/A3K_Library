@@ -46,6 +46,8 @@ namespace A3K_Library
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.txtKodeBuku = new System.Windows.Forms.TextBox();
+            this.bukuBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.a3K_LibraryDataSet5 = new A3K_Library.A3K_LibraryDataSet5();
             this.txtKontenDigital = new System.Windows.Forms.TextBox();
             this.txtTargetPembaca = new System.Windows.Forms.TextBox();
             this.txtBahasa = new System.Windows.Forms.TextBox();
@@ -59,12 +61,10 @@ namespace A3K_Library
             this.txtDeskripsiFisik = new System.Windows.Forms.TextBox();
             this.txtEdisi = new System.Windows.Forms.TextBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.a3K_LibraryDataSet5 = new A3K_Library.A3K_LibraryDataSet5();
-            this.bukuBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bukuTableAdapter = new A3K_Library.A3K_LibraryDataSet5TableAdapters.BukuTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bukuBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
@@ -231,6 +231,16 @@ namespace A3K_Library
             this.txtKodeBuku.Size = new System.Drawing.Size(764, 30);
             this.txtKodeBuku.TabIndex = 26;
             // 
+            // bukuBindingSource
+            // 
+            this.bukuBindingSource.DataMember = "Buku";
+            this.bukuBindingSource.DataSource = this.a3K_LibraryDataSet5;
+            // 
+            // a3K_LibraryDataSet5
+            // 
+            this.a3K_LibraryDataSet5.DataSetName = "A3K_LibraryDataSet5";
+            this.a3K_LibraryDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // txtKontenDigital
             // 
             this.txtKontenDigital.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource, "Konten_Digital", true));
@@ -350,16 +360,7 @@ namespace A3K_Library
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 39;
             this.pictureBox6.TabStop = false;
-            // 
-            // a3K_LibraryDataSet5
-            // 
-            this.a3K_LibraryDataSet5.DataSetName = "A3K_LibraryDataSet5";
-            this.a3K_LibraryDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bukuBindingSource
-            // 
-            this.bukuBindingSource.DataMember = "Buku";
-            this.bukuBindingSource.DataSource = this.a3K_LibraryDataSet5;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // bukuTableAdapter
             // 
@@ -405,9 +406,9 @@ namespace A3K_Library
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_AddBook";
             this.Load += new System.EventHandler(this.Form_AddBook_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bukuBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

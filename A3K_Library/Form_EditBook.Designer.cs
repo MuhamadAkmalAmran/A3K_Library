@@ -30,19 +30,19 @@ namespace A3K_Library
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_EditBook));
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtEdisiEd = new System.Windows.Forms.TextBox();
+            this.txtDeskripsiEd = new System.Windows.Forms.TextBox();
+            this.txtPenulisEd = new System.Windows.Forms.TextBox();
+            this.txtJudulEd = new System.Windows.Forms.TextBox();
+            this.txtISBNEd = new System.Windows.Forms.TextBox();
+            this.txtEksemplarEd = new System.Windows.Forms.TextBox();
+            this.txtPenerbitEd = new System.Windows.Forms.TextBox();
+            this.txtTahunEd = new System.Windows.Forms.TextBox();
+            this.txtSubjekEd = new System.Windows.Forms.TextBox();
+            this.txtBahasaEd = new System.Windows.Forms.TextBox();
+            this.txtTargetEd = new System.Windows.Forms.TextBox();
+            this.txtKontenEd = new System.Windows.Forms.TextBox();
+            this.txtKodeED = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -61,109 +61,109 @@ namespace A3K_Library
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox13
+            // txtEdisiEd
             // 
-            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(333, 486);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(764, 30);
-            this.textBox13.TabIndex = 65;
+            this.txtEdisiEd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEdisiEd.Location = new System.Drawing.Point(333, 486);
+            this.txtEdisiEd.Name = "txtEdisiEd";
+            this.txtEdisiEd.Size = new System.Drawing.Size(764, 30);
+            this.txtEdisiEd.TabIndex = 65;
             // 
-            // textBox12
+            // txtDeskripsiEd
             // 
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(333, 528);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(764, 30);
-            this.textBox12.TabIndex = 64;
+            this.txtDeskripsiEd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDeskripsiEd.Location = new System.Drawing.Point(333, 528);
+            this.txtDeskripsiEd.Name = "txtDeskripsiEd";
+            this.txtDeskripsiEd.Size = new System.Drawing.Size(764, 30);
+            this.txtDeskripsiEd.TabIndex = 64;
             // 
-            // textBox11
+            // txtPenulisEd
             // 
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(333, 66);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(764, 30);
-            this.textBox11.TabIndex = 63;
+            this.txtPenulisEd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPenulisEd.Location = new System.Drawing.Point(333, 66);
+            this.txtPenulisEd.Name = "txtPenulisEd";
+            this.txtPenulisEd.Size = new System.Drawing.Size(764, 30);
+            this.txtPenulisEd.TabIndex = 63;
             // 
-            // textBox10
+            // txtJudulEd
             // 
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(333, 108);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(764, 30);
-            this.textBox10.TabIndex = 62;
+            this.txtJudulEd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtJudulEd.Location = new System.Drawing.Point(333, 108);
+            this.txtJudulEd.Name = "txtJudulEd";
+            this.txtJudulEd.Size = new System.Drawing.Size(764, 30);
+            this.txtJudulEd.TabIndex = 62;
             // 
-            // textBox9
+            // txtISBNEd
             // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(333, 150);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(764, 30);
-            this.textBox9.TabIndex = 61;
+            this.txtISBNEd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtISBNEd.Location = new System.Drawing.Point(333, 150);
+            this.txtISBNEd.Name = "txtISBNEd";
+            this.txtISBNEd.Size = new System.Drawing.Size(764, 30);
+            this.txtISBNEd.TabIndex = 61;
             // 
-            // textBox8
+            // txtEksemplarEd
             // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(333, 234);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(764, 30);
-            this.textBox8.TabIndex = 60;
+            this.txtEksemplarEd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEksemplarEd.Location = new System.Drawing.Point(333, 234);
+            this.txtEksemplarEd.Name = "txtEksemplarEd";
+            this.txtEksemplarEd.Size = new System.Drawing.Size(764, 30);
+            this.txtEksemplarEd.TabIndex = 60;
             // 
-            // textBox7
+            // txtPenerbitEd
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(333, 192);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(764, 30);
-            this.textBox7.TabIndex = 59;
+            this.txtPenerbitEd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPenerbitEd.Location = new System.Drawing.Point(333, 192);
+            this.txtPenerbitEd.Name = "txtPenerbitEd";
+            this.txtPenerbitEd.Size = new System.Drawing.Size(764, 30);
+            this.txtPenerbitEd.TabIndex = 59;
             // 
-            // textBox6
+            // txtTahunEd
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(333, 318);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(764, 30);
-            this.textBox6.TabIndex = 58;
+            this.txtTahunEd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTahunEd.Location = new System.Drawing.Point(333, 318);
+            this.txtTahunEd.Name = "txtTahunEd";
+            this.txtTahunEd.Size = new System.Drawing.Size(764, 30);
+            this.txtTahunEd.TabIndex = 58;
             // 
-            // textBox5
+            // txtSubjekEd
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(333, 276);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(764, 30);
-            this.textBox5.TabIndex = 57;
+            this.txtSubjekEd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSubjekEd.Location = new System.Drawing.Point(333, 276);
+            this.txtSubjekEd.Name = "txtSubjekEd";
+            this.txtSubjekEd.Size = new System.Drawing.Size(764, 30);
+            this.txtSubjekEd.TabIndex = 57;
             // 
-            // textBox4
+            // txtBahasaEd
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(333, 444);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(764, 30);
-            this.textBox4.TabIndex = 56;
+            this.txtBahasaEd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBahasaEd.Location = new System.Drawing.Point(333, 444);
+            this.txtBahasaEd.Name = "txtBahasaEd";
+            this.txtBahasaEd.Size = new System.Drawing.Size(764, 30);
+            this.txtBahasaEd.TabIndex = 56;
             // 
-            // textBox3
+            // txtTargetEd
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(333, 402);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(764, 30);
-            this.textBox3.TabIndex = 55;
+            this.txtTargetEd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTargetEd.Location = new System.Drawing.Point(333, 402);
+            this.txtTargetEd.Name = "txtTargetEd";
+            this.txtTargetEd.Size = new System.Drawing.Size(764, 30);
+            this.txtTargetEd.TabIndex = 55;
             // 
-            // textBox2
+            // txtKontenEd
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(333, 360);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(764, 30);
-            this.textBox2.TabIndex = 54;
+            this.txtKontenEd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKontenEd.Location = new System.Drawing.Point(333, 360);
+            this.txtKontenEd.Name = "txtKontenEd";
+            this.txtKontenEd.Size = new System.Drawing.Size(764, 30);
+            this.txtKontenEd.TabIndex = 54;
             // 
-            // textBox1
+            // txtKodeED
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(333, 24);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(764, 30);
-            this.textBox1.TabIndex = 53;
+            this.txtKodeED.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKodeED.Location = new System.Drawing.Point(333, 24);
+            this.txtKodeED.Name = "txtKodeED";
+            this.txtKodeED.Size = new System.Drawing.Size(764, 30);
+            this.txtKodeED.TabIndex = 53;
             // 
             // label13
             // 
@@ -317,6 +317,7 @@ namespace A3K_Library
             this.button1.TabIndex = 39;
             this.button1.Text = "SAVE";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox6
             // 
@@ -328,6 +329,7 @@ namespace A3K_Library
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 66;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // Form_EditBook
             // 
@@ -337,19 +339,19 @@ namespace A3K_Library
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1262, 673);
             this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtEdisiEd);
+            this.Controls.Add(this.txtDeskripsiEd);
+            this.Controls.Add(this.txtPenulisEd);
+            this.Controls.Add(this.txtJudulEd);
+            this.Controls.Add(this.txtISBNEd);
+            this.Controls.Add(this.txtEksemplarEd);
+            this.Controls.Add(this.txtPenerbitEd);
+            this.Controls.Add(this.txtTahunEd);
+            this.Controls.Add(this.txtSubjekEd);
+            this.Controls.Add(this.txtBahasaEd);
+            this.Controls.Add(this.txtTargetEd);
+            this.Controls.Add(this.txtKontenEd);
+            this.Controls.Add(this.txtKodeED);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
@@ -368,6 +370,7 @@ namespace A3K_Library
             this.Name = "Form_EditBook";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Edit Book";
+            this.Load += new System.EventHandler(this.Form_EditBook_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -375,20 +378,6 @@ namespace A3K_Library
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
@@ -404,5 +393,18 @@ namespace A3K_Library
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox6;
+        public System.Windows.Forms.TextBox txtEdisiEd;
+        public System.Windows.Forms.TextBox txtDeskripsiEd;
+        public System.Windows.Forms.TextBox txtPenulisEd;
+        public System.Windows.Forms.TextBox txtJudulEd;
+        public System.Windows.Forms.TextBox txtISBNEd;
+        public System.Windows.Forms.TextBox txtEksemplarEd;
+        public System.Windows.Forms.TextBox txtPenerbitEd;
+        public System.Windows.Forms.TextBox txtTahunEd;
+        public System.Windows.Forms.TextBox txtSubjekEd;
+        public System.Windows.Forms.TextBox txtBahasaEd;
+        public System.Windows.Forms.TextBox txtTargetEd;
+        public System.Windows.Forms.TextBox txtKontenEd;
+        public System.Windows.Forms.TextBox txtKodeED;
     }
 }
