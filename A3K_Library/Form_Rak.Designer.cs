@@ -37,9 +37,6 @@ namespace A3K_Library
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridRak = new System.Windows.Forms.DataGridView();
-            this.nomorRakDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kategoriRakDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lokasiRakDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rakBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.a3K_LibraryDataSet = new A3K_Library.A3K_LibraryDataSet();
             this.rakTableAdapter = new A3K_Library.A3K_LibraryDataSetTableAdapters.RakTableAdapter();
@@ -114,14 +111,8 @@ namespace A3K_Library
             // 
             // dataGridRak
             // 
-            this.dataGridRak.AutoGenerateColumns = false;
             this.dataGridRak.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dataGridRak.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridRak.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nomorRakDataGridViewTextBoxColumn,
-            this.kategoriRakDataGridViewTextBoxColumn,
-            this.lokasiRakDataGridViewTextBoxColumn});
-            this.dataGridRak.DataSource = this.rakBindingSource;
             this.dataGridRak.Location = new System.Drawing.Point(213, 266);
             this.dataGridRak.Name = "dataGridRak";
             this.dataGridRak.RowHeadersWidth = 51;
@@ -129,31 +120,7 @@ namespace A3K_Library
             this.dataGridRak.Size = new System.Drawing.Size(837, 227);
             this.dataGridRak.TabIndex = 6;
             this.dataGridRak.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridRak_CellClick);
-            this.dataGridRak.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
-            // 
-            // nomorRakDataGridViewTextBoxColumn
-            // 
-            this.nomorRakDataGridViewTextBoxColumn.DataPropertyName = "Nomor_Rak";
-            this.nomorRakDataGridViewTextBoxColumn.HeaderText = "Nomor_Rak";
-            this.nomorRakDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nomorRakDataGridViewTextBoxColumn.Name = "nomorRakDataGridViewTextBoxColumn";
-            this.nomorRakDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // kategoriRakDataGridViewTextBoxColumn
-            // 
-            this.kategoriRakDataGridViewTextBoxColumn.DataPropertyName = "Kategori_Rak";
-            this.kategoriRakDataGridViewTextBoxColumn.HeaderText = "Kategori_Rak";
-            this.kategoriRakDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.kategoriRakDataGridViewTextBoxColumn.Name = "kategoriRakDataGridViewTextBoxColumn";
-            this.kategoriRakDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // lokasiRakDataGridViewTextBoxColumn
-            // 
-            this.lokasiRakDataGridViewTextBoxColumn.DataPropertyName = "Lokasi_Rak";
-            this.lokasiRakDataGridViewTextBoxColumn.HeaderText = "Lokasi_Rak";
-            this.lokasiRakDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.lokasiRakDataGridViewTextBoxColumn.Name = "lokasiRakDataGridViewTextBoxColumn";
-            this.lokasiRakDataGridViewTextBoxColumn.Width = 125;
+            this.dataGridRak.CellLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridRak_CellLeave);
             // 
             // rakBindingSource
             // 
@@ -303,9 +270,6 @@ namespace A3K_Library
         private A3K_LibraryDataSet a3K_LibraryDataSet;
         private System.Windows.Forms.BindingSource rakBindingSource;
         private A3K_LibraryDataSetTableAdapters.RakTableAdapter rakTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nomorRakDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn kategoriRakDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lokasiRakDataGridViewTextBoxColumn;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;

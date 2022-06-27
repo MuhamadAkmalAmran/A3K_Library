@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace A3K_Library
 {
     public partial class Form_EditRak : Form
     {
-        int selectedRow;
+        private SqlCommand cmd;
+        Koneksi conn = new Koneksi();
         public Form_EditRak()
         {
             InitializeComponent();
@@ -56,18 +58,31 @@ namespace A3K_Library
         private void button1_Click(object sender, EventArgs e)
         {
             Form_Rak fr = new Form_Rak();
-            DataGridViewRow newDataRow = fr.dataGridRak.Rows[selectedRow];
-            newDataRow.Cells[0].Value = txtNameEd.Text;
-            newDataRow.Cells[1].Value = txtCategoryEd.Text;
-            newDataRow.Cells[2].Value = txtLocEd;
-            fr.Show();
-            this.Close();
+            if (txtNoEd.Text.Trim() == "" || txtCategoryEd.Text.Trim() == "" || txtLocEd.Text.Trim() == "")
+            {
+                MessageBox.Show("Data Belum diisi!");
+            }
+            else
+            {
+                SqlConnection conect = conn.GetConn();
+                try
+                {
+                    cmd = new SqlCommand("update Rak set Kategori_Rak = '" + txtCategoryEd.Text + "', Lokasi_Rak = '" + txtLocEd.Text + "' where Nomor_Rak = '" + txtNoEd.Text + "'", conect);
+                    conect.Open();
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Data Berhasi diUbah");
+                    fr.Show();
+                    this.Close();
+                }
+                catch (Exception x)
+                {
+                    MessageBox.Show(x.ToString());
+                }
+            }
         }
 
         private void Form_EditRak_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'a3K_LibraryDataSet.Rak' table. You can move, or remove it, as needed.
-            this.rakTableAdapter.Fill(this.a3K_LibraryDataSet.Rak);
 
         }
 

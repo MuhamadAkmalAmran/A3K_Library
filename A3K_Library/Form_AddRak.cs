@@ -7,18 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace A3K_Library
 {
     public partial class Form_AddRak : Form
     {
-        DataTable dt;
-        DataRow dr;
+        private SqlCommand cmd;
+        Koneksi conn = new Koneksi();
+        Form_Rak fr = new Form_Rak();
         public Form_AddRak()
         {
             InitializeComponent();
         }
 
+         
         private void Form_AddRak_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'a3K_LibraryDataSet.Rak' table. You can move, or remove it, as needed.
@@ -28,7 +31,29 @@ namespace A3K_Library
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dt = a3K_LibraryDataSet.Tables["Rak"];
+            if (txtNoAdd.Text.Trim() == "" || txtCategoryAdd.Text.Trim() == "" || txtLocAdd.Text.Trim() == "")
+            {
+                MessageBox.Show("Data Belum diisi!");
+            }
+            else
+            {
+                SqlConnection conect = conn.GetConn();
+                try
+                {
+                    cmd = new SqlCommand("insert into Rak values ('" + txtNoAdd.Text + "', '" + txtCategoryAdd.Text + "', '" + txtLocAdd.Text + "')", conect);
+                    conect.Open();
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Data Berhasi diSimpan");
+                    fr.Show();
+                    this.Close();
+                }
+                catch (Exception x)
+                {
+                    MessageBox.Show(x.ToString());
+                }
+            }
+
+            /*dt = a3K_LibraryDataSet.Tables["Rak"];
             dr = dt.NewRow();
             dr[0] = txtNoAdd.Text;
             dr[1] = txtCategoryAdd.Text;
@@ -41,6 +66,12 @@ namespace A3K_Library
             this.rakTableAdapter.Fill(this.a3K_LibraryDataSet.Rak);
             btnAddRak.Enabled = false;
             new Form_Rak().Show();
+            this.Close();*/
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            fr.Show();
             this.Close();
         }
     }

@@ -29,28 +29,21 @@ namespace A3K_Library
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_EditRak));
             this.txtCategoryEd = new System.Windows.Forms.TextBox();
             this.txtLocEd = new System.Windows.Forms.TextBox();
-            this.txtNameEd = new System.Windows.Forms.TextBox();
+            this.txtNoEd = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.saveRakBtn = new System.Windows.Forms.Button();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.a3K_LibraryDataSet = new A3K_Library.A3K_LibraryDataSet();
-            this.rakBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.rakTableAdapter = new A3K_Library.A3K_LibraryDataSetTableAdapters.RakTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rakBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // txtCategoryEd
             // 
-            this.txtCategoryEd.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.rakBindingSource, "Kategori_Rak", true));
             this.txtCategoryEd.Location = new System.Drawing.Point(621, 258);
             this.txtCategoryEd.Multiline = true;
             this.txtCategoryEd.Name = "txtCategoryEd";
@@ -60,7 +53,6 @@ namespace A3K_Library
             // 
             // txtLocEd
             // 
-            this.txtLocEd.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.rakBindingSource, "Lokasi_Rak", true));
             this.txtLocEd.Location = new System.Drawing.Point(621, 338);
             this.txtLocEd.Multiline = true;
             this.txtLocEd.Name = "txtLocEd";
@@ -68,15 +60,14 @@ namespace A3K_Library
             this.txtLocEd.TabIndex = 14;
             this.txtLocEd.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // txtNameEd
+            // txtNoEd
             // 
-            this.txtNameEd.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.rakBindingSource, "Nomor_Rak", true));
-            this.txtNameEd.Location = new System.Drawing.Point(621, 185);
-            this.txtNameEd.Multiline = true;
-            this.txtNameEd.Name = "txtNameEd";
-            this.txtNameEd.Size = new System.Drawing.Size(300, 50);
-            this.txtNameEd.TabIndex = 13;
-            this.txtNameEd.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtNoEd.Location = new System.Drawing.Point(621, 185);
+            this.txtNoEd.Multiline = true;
+            this.txtNoEd.Name = "txtNoEd";
+            this.txtNoEd.Size = new System.Drawing.Size(300, 50);
+            this.txtNoEd.TabIndex = 13;
+            this.txtNoEd.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label4
             // 
@@ -85,9 +76,9 @@ namespace A3K_Library
             this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(373, 194);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(130, 28);
+            this.label4.Size = new System.Drawing.Size(141, 28);
             this.label4.TabIndex = 12;
-            this.label4.Text = "Nama Rak";
+            this.label4.Text = "Nomor Rak";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
@@ -148,20 +139,6 @@ namespace A3K_Library
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
-            // a3K_LibraryDataSet
-            // 
-            this.a3K_LibraryDataSet.DataSetName = "A3K_LibraryDataSet";
-            this.a3K_LibraryDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // rakBindingSource
-            // 
-            this.rakBindingSource.DataMember = "Rak";
-            this.rakBindingSource.DataSource = this.a3K_LibraryDataSet;
-            // 
-            // rakTableAdapter
-            // 
-            this.rakTableAdapter.ClearBeforeFill = true;
-            // 
             // Form_EditRak
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -172,7 +149,7 @@ namespace A3K_Library
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.txtCategoryEd);
             this.Controls.Add(this.txtLocEd);
-            this.Controls.Add(this.txtNameEd);
+            this.Controls.Add(this.txtNoEd);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -184,8 +161,6 @@ namespace A3K_Library
             this.Text = "Form_EditRak";
             this.Load += new System.EventHandler(this.Form_EditRak_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rakBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,9 +175,6 @@ namespace A3K_Library
         private System.Windows.Forms.PictureBox pictureBox6;
         public System.Windows.Forms.TextBox txtCategoryEd;
         public System.Windows.Forms.TextBox txtLocEd;
-        public System.Windows.Forms.TextBox txtNameEd;
-        private A3K_LibraryDataSet a3K_LibraryDataSet;
-        private System.Windows.Forms.BindingSource rakBindingSource;
-        private A3K_LibraryDataSetTableAdapters.RakTableAdapter rakTableAdapter;
+        public System.Windows.Forms.TextBox txtNoEd;
     }
 }

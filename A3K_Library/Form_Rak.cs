@@ -7,12 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace A3K_Library
 {
     public partial class Form_Rak : Form
     {
-        int selectRow;
+        private SqlCommand cmd;
+        private DataSet ds;
+        private SqlDataAdapter da;
+        Koneksi conn = new Koneksi();
+
         public Form_Rak()
         {
             InitializeComponent();
@@ -24,10 +29,36 @@ namespace A3K_Library
             this.Close();
         }
 
+        void TampilRak()
+        {
+            SqlConnection conect = conn.GetConn();
+
+            try
+            {
+                conect.Open();
+                cmd = new SqlCommand("Select * from Rak", conect);
+                ds = new DataSet();
+                da = new SqlDataAdapter(cmd);
+                da.Fill(ds, "Rak");
+                dataGridRak.DataSource = ds;
+                dataGridRak.DataMember = "Rak";
+                dataGridRak.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show(x.ToString());
+            }
+            finally
+            {
+                conect.Close();
+            }
+        }
         private void Form_Rak_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'a3K_LibraryDataSet.Rak' table. You can move, or remove it, as needed.
             this.rakTableAdapter.Fill(this.a3K_LibraryDataSet.Rak);
+
+            TampilRak();
         }
 
         public void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -36,25 +67,11 @@ namespace A3K_Library
             Rak1.labelNoRak.Text = this.dataGridRak.CurrentRow.Cells[0].Value.ToString();
             Rak1.labelKategoriRak.Text = this.dataGridRak.CurrentRow.Cells[1].Value.ToString();
             Rak1.labelLokasiRak.Text = this.dataGridRak.CurrentRow.Cells[2].Value.ToString();
-
-            // get datagridview selected row
-            selectRow = e.RowIndex;
-
-            DataGridViewRow row = dataGridRak.Rows[selectRow];
-            // display datagridview selected row data into textboxes
-            Form_EditRak ER = new Form_EditRak();
-            ER.txtNameEd.Text = row.Cells[0].Value.ToString();
-            ER.txtCategoryEd.Text = row.Cells[1].Value.ToString();
-            ER.txtLocEd.Text = row.Cells[2].Value.ToString();
-            ER.Show();
-            this.Hide();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            
-            new Form_EditRak().Show();
-            this.Hide();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -64,11 +81,8 @@ namespace A3K_Library
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            Form_AddRak FAR = new Form_AddRak();
-            FAR.Show();
-            FAR.txtNoAdd.Clear();
-            FAR.txtLocAdd.Clear();
-            FAR.txtCategoryAdd.Clear();
+            Form_AddRak ar = new Form_AddRak();
+            ar.Show();
         }
         
 
@@ -104,13 +118,36 @@ namespace A3K_Library
 
         private void dataGridRak_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            Form_EditRak er = new Form_EditRak();
+            try
+            {
+                DataGridViewRow row = this.dataGridRak.Rows[e.RowIndex];
+                er.txtNoEd.Text = row.Cells["Nomor_Rak"].Value.ToString();
+                er.txtCategoryEd.Text = row.Cells["Kategori_Rak"].Value.ToString();
+                er.txtLocEd.Text = row.Cells["Lokasi_Rak"].Value.ToString();
+                er.Show();
+                this.Hide();
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show(x.ToString());
+            }
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             new FormMenu().Show();
             this.Close();
+        }
+
+        private void dataGridRak_CellLeave(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void dataGridRak_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

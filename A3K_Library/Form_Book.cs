@@ -101,5 +101,12 @@ namespace A3K_Library
                 dataGridBook.Rows.RemoveAt(item.Index);
             }
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Form_EditBook eb = new Form_EditBook();
+            eb.Show();
+            this.Hide();
+        }
     }
 }
