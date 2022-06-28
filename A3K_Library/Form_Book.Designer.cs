@@ -41,7 +41,6 @@ namespace A3K_Library
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.dataGridBook = new System.Windows.Forms.DataGridView();
             this.bukuBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.a3K_LibraryDataSet4 = new A3K_Library.A3K_LibraryDataSet4();
@@ -80,7 +79,6 @@ namespace A3K_Library
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridBook)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bukuBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet4)).BeginInit();
@@ -130,7 +128,7 @@ namespace A3K_Library
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(409, 249);
+            this.pictureBox4.Location = new System.Drawing.Point(345, 259);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(42, 42);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -142,7 +140,7 @@ namespace A3K_Library
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(347, 249);
+            this.pictureBox3.Location = new System.Drawing.Point(283, 259);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(42, 42);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -154,7 +152,7 @@ namespace A3K_Library
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(281, 249);
+            this.pictureBox2.Location = new System.Drawing.Point(217, 259);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(42, 42);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -178,9 +176,9 @@ namespace A3K_Library
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(833, 139);
+            this.pictureBox1.Location = new System.Drawing.Point(822, 141);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(42, 42);
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
@@ -201,24 +199,13 @@ namespace A3K_Library
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(474, 249);
+            this.pictureBox7.Location = new System.Drawing.Point(410, 259);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(42, 42);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 19;
             this.pictureBox7.TabStop = false;
             this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(216, 249);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(42, 42);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 20;
-            this.pictureBox8.TabStop = false;
             // 
             // dataGridBook
             // 
@@ -324,7 +311,7 @@ namespace A3K_Library
             this.kodeBukuDataGridViewTextBoxColumn.HeaderText = "Kode_Buku";
             this.kodeBukuDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.kodeBukuDataGridViewTextBoxColumn.Name = "kodeBukuDataGridViewTextBoxColumn";
-            this.kodeBukuDataGridViewTextBoxColumn.Width = 125;
+            this.kodeBukuDataGridViewTextBoxColumn.Width = 110;
             // 
             // penulisBukuDataGridViewTextBoxColumn
             // 
@@ -332,7 +319,8 @@ namespace A3K_Library
             this.penulisBukuDataGridViewTextBoxColumn.HeaderText = "Penulis_Buku";
             this.penulisBukuDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.penulisBukuDataGridViewTextBoxColumn.Name = "penulisBukuDataGridViewTextBoxColumn";
-            this.penulisBukuDataGridViewTextBoxColumn.Width = 125;
+            this.penulisBukuDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.penulisBukuDataGridViewTextBoxColumn.Width = 123;
             // 
             // judulBukuDataGridViewTextBoxColumn
             // 
@@ -340,7 +328,8 @@ namespace A3K_Library
             this.judulBukuDataGridViewTextBoxColumn.HeaderText = "Judul_Buku";
             this.judulBukuDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.judulBukuDataGridViewTextBoxColumn.Name = "judulBukuDataGridViewTextBoxColumn";
-            this.judulBukuDataGridViewTextBoxColumn.Width = 125;
+            this.judulBukuDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.judulBukuDataGridViewTextBoxColumn.Width = 111;
             // 
             // iSBNDataGridViewTextBoxColumn
             // 
@@ -348,7 +337,8 @@ namespace A3K_Library
             this.iSBNDataGridViewTextBoxColumn.HeaderText = "ISBN";
             this.iSBNDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.iSBNDataGridViewTextBoxColumn.Name = "iSBNDataGridViewTextBoxColumn";
-            this.iSBNDataGridViewTextBoxColumn.Width = 125;
+            this.iSBNDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.iSBNDataGridViewTextBoxColumn.Width = 68;
             // 
             // penerbitDataGridViewTextBoxColumn
             // 
@@ -430,7 +420,6 @@ namespace A3K_Library
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1262, 673);
             this.Controls.Add(this.dataGridBook);
-            this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox1);
@@ -454,7 +443,6 @@ namespace A3K_Library
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridBook)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bukuBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet4)).EndInit();
@@ -484,7 +472,6 @@ namespace A3K_Library
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.DataGridView dataGridBook;
         private A3K_LibraryDataSet4TableAdapters.BukuTableAdapter bukuTableAdapter;
         private System.Windows.Forms.BindingSource bukuBindingSource;

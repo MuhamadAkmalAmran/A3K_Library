@@ -70,11 +70,12 @@ namespace A3K_Library
             this.tbPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbPassword.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPassword.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPassword.Location = new System.Drawing.Point(431, 357);
             this.tbPassword.Name = "tbPassword";
-            this.tbPassword.Size = new System.Drawing.Size(400, 54);
+            this.tbPassword.Size = new System.Drawing.Size(400, 36);
             this.tbPassword.TabIndex = 2;
+            this.tbPassword.UseSystemPasswordChar = true;
             // 
             // label1
             // 
