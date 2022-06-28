@@ -28,5 +28,10 @@ namespace A3K_Library
             mn.Show();
             this.Close();
         }
+
+        private void Form_Profile_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

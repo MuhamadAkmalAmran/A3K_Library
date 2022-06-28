@@ -147,11 +147,11 @@ namespace A3K_Library
 
         private void dataGridRak_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            Form_DetailRak Rak1 = new Form_DetailRak();
+            /*Form_DetailRak Rak1 = new Form_DetailRak();
             Rak1.labelNoRak.Text = this.dataGridRak.CurrentRow.Cells[0].Value.ToString();
             Rak1.labelKategoriRak.Text = this.dataGridRak.CurrentRow.Cells[1].Value.ToString();
-            Rak1.labelLokasiRak.Text = this.dataGridRak.CurrentRow.Cells[2].Value.ToString();
-            /*Form_EditRak er = new Form_EditRak();
+            Rak1.labelLokasiRak.Text = this.dataGridRak.CurrentRow.Cells[2].Value.ToString();*/
+            Form_EditRak er = new Form_EditRak();
             try
             {
                 DataGridViewRow row = this.dataGridRak.Rows[e.RowIndex];
@@ -164,7 +164,7 @@ namespace A3K_Library
             catch (Exception x)
             {
                 MessageBox.Show(x.ToString());
-            }*/
+            }
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
@@ -180,21 +180,7 @@ namespace A3K_Library
 
         private void dataGridRak_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            Form_EditRak er = new Form_EditRak();
-            try
-            {
-                DataGridViewRow row = this.dataGridRak.Rows[e.RowIndex];
-                er.txtNoEd.Text = row.Cells[0].Value.ToString();
-                er.txtCategoryEd.Text = row.Cells[1].Value.ToString();
-                er.txtLocEd.Text = row.Cells[2].Value.ToString();
-                er.Show();
-                this.Hide();
-            }
-            catch (Exception x)
-            {
-                MessageBox.Show(x.ToString());
-            }
-
+            
         }
 
         private void dataGridRak_CellContentClick(object sender, DataGridViewCellEventArgs e)
