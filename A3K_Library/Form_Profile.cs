@@ -40,5 +40,12 @@ namespace A3K_Library
             mn.Show();
             this.Close();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Form_EditProfile ep = new Form_EditProfile();
+            ep.Show();
+            this.Close();
+        }
     }
 }

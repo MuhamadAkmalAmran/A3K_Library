@@ -30,7 +30,7 @@ namespace A3K_Library
             this.Close();
         }
 
-        void TampilBook()
+        /*void TampilBook()
         {
             SqlConnection conect = conn.GetConn();
 
@@ -53,7 +53,7 @@ namespace A3K_Library
             {
                 conect.Close();
             }
-        }
+        }*/
 
         void CariBuku()
         {
@@ -86,7 +86,7 @@ namespace A3K_Library
             // TODO: This line of code loads data into the 'a3K_LibraryDataSet7.Buku' table. You can move, or remove it, as needed.
             this.bukuTableAdapter.Fill(this.a3K_LibraryDataSet7.Buku);
 
-            TampilBook();
+            //TampilBook();
         }
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
