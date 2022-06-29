@@ -212,5 +212,10 @@ namespace A3K_Library
                 this.dataGridRak.Rows.RemoveAt(this.rowIndex);
             }
         }
+
+        private void dataGridRak_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
     }
 }

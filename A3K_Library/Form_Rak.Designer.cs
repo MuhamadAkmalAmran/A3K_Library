@@ -46,7 +46,6 @@ namespace A3K_Library
             this.rakBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.a3K_LibraryDataSet = new A3K_Library.A3K_LibraryDataSet();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -60,7 +59,6 @@ namespace A3K_Library
             ((System.ComponentModel.ISupportInitialize)(this.rakBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -137,6 +135,7 @@ namespace A3K_Library
             this.dataGridRak.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridRak_CellClick);
             this.dataGridRak.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridRak_CellDoubleClick);
             this.dataGridRak.CellMouseUp += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridRak_CellMouseUp);
+            this.dataGridRak.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridRak_RowEnter);
             this.dataGridRak.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dataGridRak_MouseUp);
             // 
             // nomorRakDataGridViewTextBoxColumn
@@ -185,23 +184,11 @@ namespace A3K_Library
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(278, 218);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(42, 42);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 11;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(340, 218);
+            this.pictureBox4.Location = new System.Drawing.Point(270, 218);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(42, 42);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -236,7 +223,7 @@ namespace A3K_Library
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(400, 218);
+            this.pictureBox7.Location = new System.Drawing.Point(330, 218);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(42, 42);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -275,7 +262,6 @@ namespace A3K_Library
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.dataGridRak);
             this.Controls.Add(this.pictureBox1);
@@ -293,7 +279,6 @@ namespace A3K_Library
             ((System.ComponentModel.ISupportInitialize)(this.rakBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -315,7 +300,6 @@ namespace A3K_Library
         private System.Windows.Forms.BindingSource rakBindingSource;
         private A3K_LibraryDataSetTableAdapters.RakTableAdapter rakTableAdapter;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
