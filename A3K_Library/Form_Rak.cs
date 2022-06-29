@@ -14,6 +14,7 @@ namespace A3K_Library
     public partial class Form_Rak : Form
     {
         private SqlCommand cmd;
+        private int rowIndex ;
         private DataSet ds;
         private SqlDataAdapter da;
         
@@ -30,6 +31,7 @@ namespace A3K_Library
             this.Close();
         }
 
+        //Method untuk menampilkan data digridview
         void TampilRak()
         {
             SqlConnection conect = conn.GetConn();
@@ -55,6 +57,7 @@ namespace A3K_Library
             }
         }
 
+        //method untuk pencarian data didatagridview
         void CariRak()
         {
             SqlConnection conect = conn.GetConn();
@@ -114,18 +117,11 @@ namespace A3K_Library
             ar.txtCategoryAdd.Clear();
             ar.txtLocAdd.Clear();
         }
-        
-
-        private void iDelete()
-        {
-            foreach (DataGridViewRow item in this.dataGridRak.SelectedRows)
-            {
-                dataGridRak.Rows.RemoveAt(item.Index);
-            }
-        }
+     
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            iDelete();
+
+            
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)
@@ -134,8 +130,8 @@ namespace A3K_Library
             {
                 if (MessageBox.Show("Do you want to save the changes?", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    rakBindingSource.EndEdit();
                     rakTableAdapter.Update(a3K_LibraryDataSet);
+                    this.rakTableAdapter.Fill(this.a3K_LibraryDataSet.Rak);
                 }
             }
             catch (Exception ex)
@@ -151,6 +147,21 @@ namespace A3K_Library
             Rak1.labelNoRak.Text = this.dataGridRak.CurrentRow.Cells[0].Value.ToString();
             Rak1.labelKategoriRak.Text = this.dataGridRak.CurrentRow.Cells[1].Value.ToString();
             Rak1.labelLokasiRak.Text = this.dataGridRak.CurrentRow.Cells[2].Value.ToString();*/
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            new FormMenu().Show();
+            this.Close();
+        }
+
+        private void dataGridRak_CellLeave(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void dataGridRak_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
             Form_EditRak er = new Form_EditRak();
             try
             {
@@ -167,35 +178,9 @@ namespace A3K_Library
             }
         }
 
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-            new FormMenu().Show();
-            this.Close();
-        }
-
-        private void dataGridRak_CellLeave(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
-
-        private void dataGridRak_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
-
         private void dataGridRak_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             
-        }
-
-        private void dataGridRak_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
-
-        private void dataGridRak_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void txtCariRak_TextChanged(object sender, EventArgs e)
@@ -203,9 +188,29 @@ namespace A3K_Library
             CariRak();
         }
 
-        private void pictureBox5_Click(object sender, EventArgs e)
+        private void dataGridRak_MouseUp(object sender, MouseEventArgs e)
         {
 
+        }
+
+        private void dataGridRak_CellMouseUp(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                this.dataGridRak.Rows[e.RowIndex].Selected = true;
+                this.rowIndex = e.RowIndex;
+                this.dataGridRak.CurrentCell = this.dataGridRak.Rows[e.RowIndex].Cells[1];
+                this.contextMenuStrip4.Show(this.dataGridRak, e.Location);
+                contextMenuStrip4.Show(Cursor.Position);
+            }
+        }
+
+        private void contextMenuStrip4_Click(object sender, EventArgs e)
+        {
+            if (!this.dataGridRak.Rows[this.rowIndex].IsNewRow)
+            {
+                this.dataGridRak.Rows.RemoveAt(this.rowIndex);
+            }
         }
     }
 }

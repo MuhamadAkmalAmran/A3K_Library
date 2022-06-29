@@ -45,15 +45,11 @@ namespace A3K_Library
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.labelDeskripsi = new System.Windows.Forms.Label();
-            this.bukuBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.a3K_LibraryDataSet2 = new A3K_Library.A3K_LibraryDataSet2();
             this.labelTarget = new System.Windows.Forms.Label();
             this.labelBahasa = new System.Windows.Forms.Label();
             this.labelEdisi = new System.Windows.Forms.Label();
             this.labelSubjek = new System.Windows.Forms.Label();
             this.labelTahun = new System.Windows.Forms.Label();
-            this.bukuBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.a3K_LibraryDataSet1 = new A3K_Library.A3K_LibraryDataSet1();
             this.labelKonten = new System.Windows.Forms.Label();
             this.labelISBN = new System.Windows.Forms.Label();
             this.labelPenerbit = new System.Windows.Forms.Label();
@@ -62,15 +58,24 @@ namespace A3K_Library
             this.labelPenulis = new System.Windows.Forms.Label();
             this.labelJudul = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.bukuBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.a3K_LibraryDataSet2 = new A3K_Library.A3K_LibraryDataSet2();
+            this.bukuBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.a3K_LibraryDataSet1 = new A3K_Library.A3K_LibraryDataSet1();
             this.bukuTableAdapter = new A3K_Library.A3K_LibraryDataSet1TableAdapters.BukuTableAdapter();
             this.bukuTableAdapter1 = new A3K_Library.A3K_LibraryDataSet2TableAdapters.BukuTableAdapter();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.a3K_LibraryDataSet7 = new A3K_Library.A3K_LibraryDataSet7();
+            this.bukuBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.bukuTableAdapter2 = new A3K_Library.A3K_LibraryDataSet7TableAdapters.BukuTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bukuBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bukuBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bukuBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // label13
@@ -221,7 +226,7 @@ namespace A3K_Library
             // 
             this.labelDeskripsi.AutoSize = true;
             this.labelDeskripsi.BackColor = System.Drawing.Color.Transparent;
-            this.labelDeskripsi.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource1, "Deskripsi_Fisik", true));
+            this.labelDeskripsi.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource2, "Deskripsi_Fisik", true));
             this.labelDeskripsi.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDeskripsi.Location = new System.Drawing.Point(367, 532);
             this.labelDeskripsi.Name = "labelDeskripsi";
@@ -229,21 +234,11 @@ namespace A3K_Library
             this.labelDeskripsi.TabIndex = 51;
             this.labelDeskripsi.Text = "Deskripsi Fisik";
             // 
-            // bukuBindingSource1
-            // 
-            this.bukuBindingSource1.DataMember = "Buku";
-            this.bukuBindingSource1.DataSource = this.a3K_LibraryDataSet2;
-            // 
-            // a3K_LibraryDataSet2
-            // 
-            this.a3K_LibraryDataSet2.DataSetName = "A3K_LibraryDataSet2";
-            this.a3K_LibraryDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // labelTarget
             // 
             this.labelTarget.AutoSize = true;
             this.labelTarget.BackColor = System.Drawing.Color.Transparent;
-            this.labelTarget.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource1, "Target_Pembaca", true));
+            this.labelTarget.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource2, "Target_Pembaca", true));
             this.labelTarget.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTarget.Location = new System.Drawing.Point(367, 406);
             this.labelTarget.Name = "labelTarget";
@@ -255,7 +250,7 @@ namespace A3K_Library
             // 
             this.labelBahasa.AutoSize = true;
             this.labelBahasa.BackColor = System.Drawing.Color.Transparent;
-            this.labelBahasa.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource1, "Bahasa", true));
+            this.labelBahasa.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource2, "Bahasa", true));
             this.labelBahasa.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelBahasa.Location = new System.Drawing.Point(367, 448);
             this.labelBahasa.Name = "labelBahasa";
@@ -267,7 +262,7 @@ namespace A3K_Library
             // 
             this.labelEdisi.AutoSize = true;
             this.labelEdisi.BackColor = System.Drawing.Color.Transparent;
-            this.labelEdisi.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource1, "Edisi", true));
+            this.labelEdisi.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource2, "Edisi", true));
             this.labelEdisi.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelEdisi.Location = new System.Drawing.Point(367, 490);
             this.labelEdisi.Name = "labelEdisi";
@@ -279,7 +274,7 @@ namespace A3K_Library
             // 
             this.labelSubjek.AutoSize = true;
             this.labelSubjek.BackColor = System.Drawing.Color.Transparent;
-            this.labelSubjek.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource1, "Subjek", true));
+            this.labelSubjek.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource2, "Subjek", true));
             this.labelSubjek.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSubjek.Location = new System.Drawing.Point(367, 280);
             this.labelSubjek.Name = "labelSubjek";
@@ -291,7 +286,7 @@ namespace A3K_Library
             // 
             this.labelTahun.AutoSize = true;
             this.labelTahun.BackColor = System.Drawing.Color.Transparent;
-            this.labelTahun.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource, "Tahun_Terbit", true));
+            this.labelTahun.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource2, "Tahun_Terbit", true));
             this.labelTahun.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTahun.Location = new System.Drawing.Point(367, 322);
             this.labelTahun.Name = "labelTahun";
@@ -299,21 +294,11 @@ namespace A3K_Library
             this.labelTahun.TabIndex = 46;
             this.labelTahun.Text = "Tahun Terbit";
             // 
-            // bukuBindingSource
-            // 
-            this.bukuBindingSource.DataMember = "Buku";
-            this.bukuBindingSource.DataSource = this.a3K_LibraryDataSet1;
-            // 
-            // a3K_LibraryDataSet1
-            // 
-            this.a3K_LibraryDataSet1.DataSetName = "A3K_LibraryDataSet1";
-            this.a3K_LibraryDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // labelKonten
             // 
             this.labelKonten.AutoSize = true;
             this.labelKonten.BackColor = System.Drawing.Color.Transparent;
-            this.labelKonten.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource1, "Konten_Digital", true));
+            this.labelKonten.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource2, "Konten_Digital", true));
             this.labelKonten.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelKonten.Location = new System.Drawing.Point(367, 364);
             this.labelKonten.Name = "labelKonten";
@@ -325,7 +310,7 @@ namespace A3K_Library
             // 
             this.labelISBN.AutoSize = true;
             this.labelISBN.BackColor = System.Drawing.Color.Transparent;
-            this.labelISBN.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource, "ISBN", true));
+            this.labelISBN.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource2, "ISBN", true));
             this.labelISBN.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelISBN.Location = new System.Drawing.Point(367, 154);
             this.labelISBN.Name = "labelISBN";
@@ -337,7 +322,7 @@ namespace A3K_Library
             // 
             this.labelPenerbit.AutoSize = true;
             this.labelPenerbit.BackColor = System.Drawing.Color.Transparent;
-            this.labelPenerbit.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource, "Penerbit", true));
+            this.labelPenerbit.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource2, "Penerbit", true));
             this.labelPenerbit.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPenerbit.Location = new System.Drawing.Point(367, 196);
             this.labelPenerbit.Name = "labelPenerbit";
@@ -349,7 +334,7 @@ namespace A3K_Library
             // 
             this.labelEksemplar.AutoSize = true;
             this.labelEksemplar.BackColor = System.Drawing.Color.Transparent;
-            this.labelEksemplar.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource1, "Eksemplar_Buku", true));
+            this.labelEksemplar.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource2, "Eksemplar_Buku", true));
             this.labelEksemplar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelEksemplar.Location = new System.Drawing.Point(367, 238);
             this.labelEksemplar.Name = "labelEksemplar";
@@ -361,7 +346,7 @@ namespace A3K_Library
             // 
             this.labelKode.AutoSize = true;
             this.labelKode.BackColor = System.Drawing.Color.Transparent;
-            this.labelKode.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource, "Kode_Buku", true));
+            this.labelKode.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource2, "Kode_Buku", true));
             this.labelKode.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelKode.Location = new System.Drawing.Point(367, 28);
             this.labelKode.Name = "labelKode";
@@ -373,7 +358,7 @@ namespace A3K_Library
             // 
             this.labelPenulis.AutoSize = true;
             this.labelPenulis.BackColor = System.Drawing.Color.Transparent;
-            this.labelPenulis.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource, "Penulis_Buku", true));
+            this.labelPenulis.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource2, "Penulis_Buku", true));
             this.labelPenulis.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPenulis.Location = new System.Drawing.Point(367, 70);
             this.labelPenulis.Name = "labelPenulis";
@@ -386,7 +371,7 @@ namespace A3K_Library
             // 
             this.labelJudul.AutoSize = true;
             this.labelJudul.BackColor = System.Drawing.Color.Transparent;
-            this.labelJudul.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource, "Judul_Buku", true));
+            this.labelJudul.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bukuBindingSource2, "Judul_Buku", true));
             this.labelJudul.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelJudul.Location = new System.Drawing.Point(367, 112);
             this.labelJudul.Name = "labelJudul";
@@ -404,14 +389,7 @@ namespace A3K_Library
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 52;
             this.pictureBox1.TabStop = false;
-            // 
-            // bukuTableAdapter
-            // 
-            this.bukuTableAdapter.ClearBeforeFill = true;
-            // 
-            // bukuTableAdapter1
-            // 
-            this.bukuTableAdapter1.ClearBeforeFill = true;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox6
             // 
@@ -423,6 +401,49 @@ namespace A3K_Library
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 53;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            // 
+            // bukuBindingSource1
+            // 
+            this.bukuBindingSource1.DataMember = "Buku";
+            this.bukuBindingSource1.DataSource = this.a3K_LibraryDataSet2;
+            // 
+            // a3K_LibraryDataSet2
+            // 
+            this.a3K_LibraryDataSet2.DataSetName = "A3K_LibraryDataSet2";
+            this.a3K_LibraryDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bukuBindingSource
+            // 
+            this.bukuBindingSource.DataMember = "Buku";
+            this.bukuBindingSource.DataSource = this.a3K_LibraryDataSet1;
+            // 
+            // a3K_LibraryDataSet1
+            // 
+            this.a3K_LibraryDataSet1.DataSetName = "A3K_LibraryDataSet1";
+            this.a3K_LibraryDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bukuTableAdapter
+            // 
+            this.bukuTableAdapter.ClearBeforeFill = true;
+            // 
+            // bukuTableAdapter1
+            // 
+            this.bukuTableAdapter1.ClearBeforeFill = true;
+            // 
+            // a3K_LibraryDataSet7
+            // 
+            this.a3K_LibraryDataSet7.DataSetName = "A3K_LibraryDataSet7";
+            this.a3K_LibraryDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bukuBindingSource2
+            // 
+            this.bukuBindingSource2.DataMember = "Buku";
+            this.bukuBindingSource2.DataSource = this.a3K_LibraryDataSet7;
+            // 
+            // bukuTableAdapter2
+            // 
+            this.bukuTableAdapter2.ClearBeforeFill = true;
             // 
             // Form_DetailBook
             // 
@@ -464,12 +485,14 @@ namespace A3K_Library
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_DetailBook";
             this.Load += new System.EventHandler(this.Form_DetailBook_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bukuBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bukuBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bukuBindingSource2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -511,5 +534,8 @@ namespace A3K_Library
         public System.Windows.Forms.Label labelPenulis;
         public System.Windows.Forms.Label labelJudul;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private A3K_LibraryDataSet7 a3K_LibraryDataSet7;
+        private System.Windows.Forms.BindingSource bukuBindingSource2;
+        private A3K_LibraryDataSet7TableAdapters.BukuTableAdapter bukuTableAdapter2;
     }
 }

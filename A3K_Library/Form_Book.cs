@@ -27,7 +27,7 @@ namespace A3K_Library
         {
             FormMenu mn = new FormMenu();
             mn.Show();
-            this.Hide();
+            this.Close();
         }
 
         void TampilBook()
@@ -56,34 +56,17 @@ namespace A3K_Library
         }
         private void Form_Book_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'a3K_LibraryDataSet6.Buku' table. You can move, or remove it, as needed.
-            this.bukuTableAdapter3.Fill(this.a3K_LibraryDataSet6.Buku);
-            // TODO: This line of code loads data into the 'a3K_LibraryDataSet5.Buku' table. You can move, or remove it, as needed.
-            this.bukuTableAdapter2.Fill(this.a3K_LibraryDataSet5.Buku);
-            // TODO: This line of code loads data into the 'a3K_LibraryDataSet1.Buku' table. You can move, or remove it, as needed.
-            this.bukuTableAdapter1.Fill(this.a3K_LibraryDataSet1.Buku);
+            // TODO: This line of code loads data into the 'a3K_LibraryDataSet8.Rak' table. You can move, or remove it, as needed.
+            this.rakTableAdapter.Fill(this.a3K_LibraryDataSet8.Rak);
+            // TODO: This line of code loads data into the 'a3K_LibraryDataSet7.Buku' table. You can move, or remove it, as needed.
+            this.bukuTableAdapter.Fill(this.a3K_LibraryDataSet7.Buku);
 
             TampilBook();
         }
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            Form_DetailBook Book1 = new Form_DetailBook();
-            Book1.labelKode.Text = this.dataGridBook.CurrentRow.Cells[0].Value.ToString();
-            Book1.labelPenulis.Text = this.dataGridBook.CurrentRow.Cells[1].Value.ToString();
-            Book1.labelJudul.Text = this.dataGridBook.CurrentRow.Cells[2].Value.ToString();
-            Book1.labelISBN.Text = this.dataGridBook.CurrentRow.Cells[3].Value.ToString();
-            Book1.labelPenerbit.Text = this.dataGridBook.CurrentRow.Cells[4].Value.ToString();
-            Book1.labelEksemplar.Text = this.dataGridBook.CurrentRow.Cells[5].Value.ToString();
-            Book1.labelSubjek.Text = this.dataGridBook.CurrentRow.Cells[6].Value.ToString();
-            Book1.labelTahun.Text = this.dataGridBook.CurrentRow.Cells[7].Value.ToString();
-            Book1.labelKonten.Text = this.dataGridBook.CurrentRow.Cells[8].Value.ToString();
-            Book1.labelTarget.Text = this.dataGridBook.CurrentRow.Cells[9].Value.ToString();
-            Book1.labelBahasa.Text = this.dataGridBook.CurrentRow.Cells[10].Value.ToString();
-         
-            Book1.labelEdisi.Text = this.dataGridBook.CurrentRow.Cells[11].Value.ToString();
-            Book1.labelDeskripsi.Text = this.dataGridBook.CurrentRow.Cells[12].Value.ToString();
-            Book1.ShowDialog();
+            
 
         }
 
@@ -104,12 +87,7 @@ namespace A3K_Library
             ab.txtBahasa.Clear();
             ab.txtEdisi.Clear();
             ab.txtDeskripsiFisik.Clear();
-            this.Hide();
-        }
-
-        private void dataGridView2_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
+            this.Close();
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)
@@ -120,7 +98,7 @@ namespace A3K_Library
                 {
                     //End edit data & save
                     bukuBindingSource.EndEdit();
-                    bukuTableAdapter.Update(a3K_LibraryDataSet4);
+                    bukuTableAdapter.Update(a3K_LibraryDataSet7);
                 }
             }
             catch (Exception ex)
@@ -141,7 +119,7 @@ namespace A3K_Library
         {
             Form_EditBook eb = new Form_EditBook();
             eb.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
@@ -151,6 +129,43 @@ namespace A3K_Library
         }
 
         private void dataGridBook_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Form_DetailBook Book1 = new Form_DetailBook();
+            Book1.labelKode.Text = this.dataGridBook.CurrentRow.Cells[0].Value.ToString();
+            Book1.labelPenulis.Text = this.dataGridBook.CurrentRow.Cells[1].Value.ToString();
+            Book1.labelJudul.Text = this.dataGridBook.CurrentRow.Cells[2].Value.ToString();
+            Book1.labelISBN.Text = this.dataGridBook.CurrentRow.Cells[3].Value.ToString();
+            Book1.labelPenerbit.Text = this.dataGridBook.CurrentRow.Cells[4].Value.ToString();
+            Book1.labelEksemplar.Text = this.dataGridBook.CurrentRow.Cells[5].Value.ToString();
+            Book1.labelSubjek.Text = this.dataGridBook.CurrentRow.Cells[6].Value.ToString();
+            Book1.labelTahun.Text = this.dataGridBook.CurrentRow.Cells[7].Value.ToString();
+            Book1.labelKonten.Text = this.dataGridBook.CurrentRow.Cells[8].Value.ToString();
+            Book1.labelTarget.Text = this.dataGridBook.CurrentRow.Cells[9].Value.ToString();
+            Book1.labelBahasa.Text = this.dataGridBook.CurrentRow.Cells[10].Value.ToString();
+
+            Book1.labelEdisi.Text = this.dataGridBook.CurrentRow.Cells[11].Value.ToString();
+            Book1.labelDeskripsi.Text = this.dataGridBook.CurrentRow.Cells[12].Value.ToString();
+            Book1.ShowDialog();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            new FormMenu().Show();
+            this.Close();
+        }
+
+        private void dataGridBook_DoubleClick(object sender, EventArgs e)
+        {
+
+            
+        }
+
+        private void dataGridBook_CellMouseLeave(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridBook_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             Form_EditBook edit = new Form_EditBook();
             try
@@ -170,18 +185,12 @@ namespace A3K_Library
                 edit.txtEdisiEd.Text = row.Cells[11].Value.ToString();
                 edit.txtDeskripsiEd.Text = row.Cells[12].Value.ToString();
                 edit.Show();
-                this.Hide();
+                this.Close();
             }
             catch (Exception x)
             {
                 MessageBox.Show(x.ToString());
             }
-        }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-            new FormMenu().Show();
-            this.Close();
         }
     }
 }

@@ -56,7 +56,7 @@ namespace A3K_Library
             this.label2.Location = new System.Drawing.Point(290, 434);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label2.Size = new System.Drawing.Size(168, 27);
+            this.label2.Size = new System.Drawing.Size(175, 28);
             this.label2.TabIndex = 33;
             this.label2.Text = "Jenis Kelamin";
             // 
@@ -67,7 +67,7 @@ namespace A3K_Library
             this.label9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(290, 508);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(91, 27);
+            this.label9.Size = new System.Drawing.Size(93, 28);
             this.label9.TabIndex = 32;
             this.label9.Text = "Alamat";
             // 
@@ -78,7 +78,7 @@ namespace A3K_Library
             this.label10.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(290, 360);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(166, 27);
+            this.label10.Size = new System.Drawing.Size(172, 28);
             this.label10.TabIndex = 31;
             this.label10.Text = "Tanggal Lahir";
             // 
@@ -90,7 +90,7 @@ namespace A3K_Library
             this.label8.Location = new System.Drawing.Point(290, 212);
             this.label8.Name = "label8";
             this.label8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label8.Size = new System.Drawing.Size(220, 27);
+            this.label8.Size = new System.Drawing.Size(226, 28);
             this.label8.TabIndex = 30;
             this.label8.Text = "Nama Pustakawan";
             // 
@@ -101,7 +101,7 @@ namespace A3K_Library
             this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(290, 286);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(183, 27);
+            this.label7.Size = new System.Drawing.Size(189, 28);
             this.label7.TabIndex = 29;
             this.label7.Text = "Nomor Telepon";
             // 
@@ -112,7 +112,7 @@ namespace A3K_Library
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(84, 70);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 32);
+            this.label3.Size = new System.Drawing.Size(105, 32);
             this.label3.TabIndex = 25;
             this.label3.Text = "Profile";
             // 
@@ -123,7 +123,7 @@ namespace A3K_Library
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(290, 138);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(179, 27);
+            this.label1.Size = new System.Drawing.Size(185, 28);
             this.label1.TabIndex = 24;
             this.label1.Text = "ID Pustakawan";
             // 
@@ -221,6 +221,7 @@ namespace A3K_Library
             this.Name = "Form_EditProfile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_EditProfile";
+            this.Load += new System.EventHandler(this.Form_EditProfile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

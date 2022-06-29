@@ -33,5 +33,16 @@ namespace A3K_Library.Properties {
                 return ((string)(this["A3K_LibraryConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LENOVO\\AKMALAMRAN;Initial Catalog=A3K_Library;Integrated Security=Tru" +
+            "e")]
+        public string A3K_LibraryConnectionString1 {
+            get {
+                return ((string)(this["A3K_LibraryConnectionString1"]));
+            }
+        }
     }
 }

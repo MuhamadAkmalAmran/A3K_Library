@@ -42,22 +42,6 @@ namespace A3K_Library
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.dataGridBook = new System.Windows.Forms.DataGridView();
-            this.bukuBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.a3K_LibraryDataSet4 = new A3K_Library.A3K_LibraryDataSet4();
-            this.bukuTableAdapter = new A3K_Library.A3K_LibraryDataSet4TableAdapters.BukuTableAdapter();
-            this.bukuBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.a3KLibraryDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.a3K_LibraryDataSet = new A3K_Library.A3K_LibraryDataSet();
-            this.a3K_LibraryDataSet1 = new A3K_Library.A3K_LibraryDataSet1();
-            this.bukuBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.bukuTableAdapter1 = new A3K_Library.A3K_LibraryDataSet1TableAdapters.BukuTableAdapter();
-            this.a3K_LibraryDataSet5 = new A3K_Library.A3K_LibraryDataSet5();
-            this.bukuBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.bukuTableAdapter2 = new A3K_Library.A3K_LibraryDataSet5TableAdapters.BukuTableAdapter();
-            this.a3K_LibraryDataSet6 = new A3K_Library.A3K_LibraryDataSet6();
-            this.bukuBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
-            this.bukuTableAdapter3 = new A3K_Library.A3K_LibraryDataSet6TableAdapters.BukuTableAdapter();
-            this.bukuBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
             this.kodeBukuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.penulisBukuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.judulBukuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -71,6 +55,12 @@ namespace A3K_Library
             this.bahasaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.edisiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.deskripsiFisikDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bukuBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.a3K_LibraryDataSet7 = new A3K_Library.A3K_LibraryDataSet7();
+            this.bukuTableAdapter = new A3K_Library.A3K_LibraryDataSet7TableAdapters.BukuTableAdapter();
+            this.a3K_LibraryDataSet8 = new A3K_Library.A3K_LibraryDataSet8();
+            this.rakBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.rakTableAdapter = new A3K_Library.A3K_LibraryDataSet8TableAdapters.RakTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -80,18 +70,10 @@ namespace A3K_Library
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridBook)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bukuBindingSource3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bukuBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a3KLibraryDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bukuBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bukuBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bukuBindingSource4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bukuBindingSource5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rakBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -225,7 +207,7 @@ namespace A3K_Library
             this.bahasaDataGridViewTextBoxColumn,
             this.edisiDataGridViewTextBoxColumn,
             this.deskripsiFisikDataGridViewTextBoxColumn});
-            this.dataGridBook.DataSource = this.bukuBindingSource3;
+            this.dataGridBook.DataSource = this.bukuBindingSource;
             this.dataGridBook.Location = new System.Drawing.Point(216, 307);
             this.dataGridBook.Name = "dataGridBook";
             this.dataGridBook.RowHeadersWidth = 51;
@@ -233,77 +215,9 @@ namespace A3K_Library
             this.dataGridBook.Size = new System.Drawing.Size(837, 227);
             this.dataGridBook.TabIndex = 21;
             this.dataGridBook.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridBook_CellClick);
-            this.dataGridBook.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick_1);
-            // 
-            // bukuBindingSource3
-            // 
-            this.bukuBindingSource3.DataMember = "Buku";
-            this.bukuBindingSource3.DataSource = this.a3K_LibraryDataSet4;
-            // 
-            // a3K_LibraryDataSet4
-            // 
-            this.a3K_LibraryDataSet4.DataSetName = "A3K_LibraryDataSet4";
-            this.a3K_LibraryDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bukuTableAdapter
-            // 
-            this.bukuTableAdapter.ClearBeforeFill = true;
-            // 
-            // bukuBindingSource
-            // 
-            this.bukuBindingSource.DataMember = "Buku";
-            // 
-            // a3K_LibraryDataSet
-            // 
-            this.a3K_LibraryDataSet.DataSetName = "A3K_LibraryDataSet";
-            this.a3K_LibraryDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // a3K_LibraryDataSet1
-            // 
-            this.a3K_LibraryDataSet1.DataSetName = "A3K_LibraryDataSet1";
-            this.a3K_LibraryDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bukuBindingSource1
-            // 
-            this.bukuBindingSource1.DataMember = "Buku";
-            this.bukuBindingSource1.DataSource = this.a3K_LibraryDataSet1;
-            // 
-            // bukuTableAdapter1
-            // 
-            this.bukuTableAdapter1.ClearBeforeFill = true;
-            // 
-            // a3K_LibraryDataSet5
-            // 
-            this.a3K_LibraryDataSet5.DataSetName = "A3K_LibraryDataSet5";
-            this.a3K_LibraryDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bukuBindingSource2
-            // 
-            this.bukuBindingSource2.DataMember = "Buku";
-            this.bukuBindingSource2.DataSource = this.a3K_LibraryDataSet5;
-            // 
-            // bukuTableAdapter2
-            // 
-            this.bukuTableAdapter2.ClearBeforeFill = true;
-            // 
-            // a3K_LibraryDataSet6
-            // 
-            this.a3K_LibraryDataSet6.DataSetName = "A3K_LibraryDataSet6";
-            this.a3K_LibraryDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bukuBindingSource4
-            // 
-            this.bukuBindingSource4.DataMember = "Buku";
-            this.bukuBindingSource4.DataSource = this.a3K_LibraryDataSet6;
-            // 
-            // bukuTableAdapter3
-            // 
-            this.bukuTableAdapter3.ClearBeforeFill = true;
-            // 
-            // bukuBindingSource5
-            // 
-            this.bukuBindingSource5.DataMember = "Buku";
-            this.bukuBindingSource5.DataSource = this.a3K_LibraryDataSet6;
+            this.dataGridBook.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridBook_CellDoubleClick);
+            this.dataGridBook.CellMouseLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridBook_CellMouseLeave);
+            this.dataGridBook.DoubleClick += new System.EventHandler(this.dataGridBook_DoubleClick);
             // 
             // kodeBukuDataGridViewTextBoxColumn
             // 
@@ -311,7 +225,7 @@ namespace A3K_Library
             this.kodeBukuDataGridViewTextBoxColumn.HeaderText = "Kode_Buku";
             this.kodeBukuDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.kodeBukuDataGridViewTextBoxColumn.Name = "kodeBukuDataGridViewTextBoxColumn";
-            this.kodeBukuDataGridViewTextBoxColumn.Width = 110;
+            this.kodeBukuDataGridViewTextBoxColumn.Width = 125;
             // 
             // penulisBukuDataGridViewTextBoxColumn
             // 
@@ -319,8 +233,7 @@ namespace A3K_Library
             this.penulisBukuDataGridViewTextBoxColumn.HeaderText = "Penulis_Buku";
             this.penulisBukuDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.penulisBukuDataGridViewTextBoxColumn.Name = "penulisBukuDataGridViewTextBoxColumn";
-            this.penulisBukuDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.penulisBukuDataGridViewTextBoxColumn.Width = 123;
+            this.penulisBukuDataGridViewTextBoxColumn.Width = 125;
             // 
             // judulBukuDataGridViewTextBoxColumn
             // 
@@ -328,8 +241,7 @@ namespace A3K_Library
             this.judulBukuDataGridViewTextBoxColumn.HeaderText = "Judul_Buku";
             this.judulBukuDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.judulBukuDataGridViewTextBoxColumn.Name = "judulBukuDataGridViewTextBoxColumn";
-            this.judulBukuDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.judulBukuDataGridViewTextBoxColumn.Width = 111;
+            this.judulBukuDataGridViewTextBoxColumn.Width = 125;
             // 
             // iSBNDataGridViewTextBoxColumn
             // 
@@ -337,8 +249,7 @@ namespace A3K_Library
             this.iSBNDataGridViewTextBoxColumn.HeaderText = "ISBN";
             this.iSBNDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.iSBNDataGridViewTextBoxColumn.Name = "iSBNDataGridViewTextBoxColumn";
-            this.iSBNDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.iSBNDataGridViewTextBoxColumn.Width = 68;
+            this.iSBNDataGridViewTextBoxColumn.Width = 125;
             // 
             // penerbitDataGridViewTextBoxColumn
             // 
@@ -412,6 +323,34 @@ namespace A3K_Library
             this.deskripsiFisikDataGridViewTextBoxColumn.Name = "deskripsiFisikDataGridViewTextBoxColumn";
             this.deskripsiFisikDataGridViewTextBoxColumn.Width = 125;
             // 
+            // bukuBindingSource
+            // 
+            this.bukuBindingSource.DataMember = "Buku";
+            this.bukuBindingSource.DataSource = this.a3K_LibraryDataSet7;
+            // 
+            // a3K_LibraryDataSet7
+            // 
+            this.a3K_LibraryDataSet7.DataSetName = "A3K_LibraryDataSet7";
+            this.a3K_LibraryDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bukuTableAdapter
+            // 
+            this.bukuTableAdapter.ClearBeforeFill = true;
+            // 
+            // a3K_LibraryDataSet8
+            // 
+            this.a3K_LibraryDataSet8.DataSetName = "A3K_LibraryDataSet8";
+            this.a3K_LibraryDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // rakBindingSource
+            // 
+            this.rakBindingSource.DataMember = "Rak";
+            this.rakBindingSource.DataSource = this.a3K_LibraryDataSet8;
+            // 
+            // rakTableAdapter
+            // 
+            this.rakTableAdapter.ClearBeforeFill = true;
+            // 
             // Form_Book
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -444,18 +383,10 @@ namespace A3K_Library
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridBook)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bukuBindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bukuBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a3KLibraryDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bukuBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bukuBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bukuBindingSource4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bukuBindingSource5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rakBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -473,22 +404,12 @@ namespace A3K_Library
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.DataGridView dataGridBook;
-        private A3K_LibraryDataSet4TableAdapters.BukuTableAdapter bukuTableAdapter;
+        private A3K_LibraryDataSet7 a3K_LibraryDataSet7;
         private System.Windows.Forms.BindingSource bukuBindingSource;
-        private A3K_LibraryDataSet4 a3K_LibraryDataSet4;
-        private System.Windows.Forms.BindingSource a3KLibraryDataSetBindingSource;
-        private A3K_LibraryDataSet a3K_LibraryDataSet;
-        private A3K_LibraryDataSet1 a3K_LibraryDataSet1;
-        private System.Windows.Forms.BindingSource bukuBindingSource1;
-        private A3K_LibraryDataSet1TableAdapters.BukuTableAdapter bukuTableAdapter1;
-        private A3K_LibraryDataSet5 a3K_LibraryDataSet5;
-        private System.Windows.Forms.BindingSource bukuBindingSource2;
-        private A3K_LibraryDataSet5TableAdapters.BukuTableAdapter bukuTableAdapter2;
-        private System.Windows.Forms.BindingSource bukuBindingSource3;
-        private A3K_LibraryDataSet6 a3K_LibraryDataSet6;
-        private System.Windows.Forms.BindingSource bukuBindingSource4;
-        private A3K_LibraryDataSet6TableAdapters.BukuTableAdapter bukuTableAdapter3;
-        private System.Windows.Forms.BindingSource bukuBindingSource5;
+        private A3K_LibraryDataSet7TableAdapters.BukuTableAdapter bukuTableAdapter;
+        private A3K_LibraryDataSet8 a3K_LibraryDataSet8;
+        private System.Windows.Forms.BindingSource rakBindingSource;
+        private A3K_LibraryDataSet8TableAdapters.RakTableAdapter rakTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn kodeBukuDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn penulisBukuDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn judulBukuDataGridViewTextBoxColumn;

@@ -1,4 +1,7 @@
 ﻿
+using System;
+using System.Windows.Forms;
+
 namespace A3K_Library
 {
     partial class Form_Rak
@@ -42,13 +45,15 @@ namespace A3K_Library
             this.lokasiRakDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rakBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.a3K_LibraryDataSet = new A3K_Library.A3K_LibraryDataSet();
-            this.rakTableAdapter = new A3K_Library.A3K_LibraryDataSetTableAdapters.RakTableAdapter();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.rakTableAdapter = new A3K_Library.A3K_LibraryDataSetTableAdapters.RakTableAdapter();
+            this.contextMenuStrip4 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.deleteRowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridRak)).BeginInit();
@@ -60,6 +65,7 @@ namespace A3K_Library
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.contextMenuStrip4.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -125,11 +131,13 @@ namespace A3K_Library
             this.dataGridRak.Name = "dataGridRak";
             this.dataGridRak.RowHeadersWidth = 51;
             this.dataGridRak.RowTemplate.Height = 24;
+            this.dataGridRak.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridRak.Size = new System.Drawing.Size(837, 227);
             this.dataGridRak.TabIndex = 6;
             this.dataGridRak.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridRak_CellClick);
-            this.dataGridRak.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridRak_CellContentDoubleClick);
-            this.dataGridRak.Click += new System.EventHandler(this.dataGridRak_Click);
+            this.dataGridRak.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridRak_CellDoubleClick);
+            this.dataGridRak.CellMouseUp += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridRak_CellMouseUp);
+            this.dataGridRak.MouseUp += new System.Windows.Forms.MouseEventHandler(this.dataGridRak_MouseUp);
             // 
             // nomorRakDataGridViewTextBoxColumn
             // 
@@ -164,10 +172,6 @@ namespace A3K_Library
             // 
             this.a3K_LibraryDataSet.DataSetName = "A3K_LibraryDataSet";
             this.a3K_LibraryDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // rakTableAdapter
-            // 
-            this.rakTableAdapter.ClearBeforeFill = true;
             // 
             // pictureBox2
             // 
@@ -215,7 +219,6 @@ namespace A3K_Library
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 13;
             this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox6
             // 
@@ -240,6 +243,25 @@ namespace A3K_Library
             this.pictureBox7.TabIndex = 15;
             this.pictureBox7.TabStop = false;
             this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
+            // 
+            // rakTableAdapter
+            // 
+            this.rakTableAdapter.ClearBeforeFill = true;
+            // 
+            // contextMenuStrip4
+            // 
+            this.contextMenuStrip4.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.deleteRowToolStripMenuItem});
+            this.contextMenuStrip4.Name = "contextMenuStrip4";
+            this.contextMenuStrip4.Size = new System.Drawing.Size(156, 28);
+            this.contextMenuStrip4.Click += new System.EventHandler(this.contextMenuStrip4_Click);
+            // 
+            // deleteRowToolStripMenuItem
+            // 
+            this.deleteRowToolStripMenuItem.Name = "deleteRowToolStripMenuItem";
+            this.deleteRowToolStripMenuItem.Size = new System.Drawing.Size(155, 24);
+            this.deleteRowToolStripMenuItem.Text = "Delete Row";
             // 
             // Form_Rak
             // 
@@ -276,6 +298,7 @@ namespace A3K_Library
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.contextMenuStrip4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -298,8 +321,13 @@ namespace A3K_Library
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
         public System.Windows.Forms.DataGridView dataGridRak;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nomorRakDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn kategoriRakDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lokasiRakDataGridViewTextBoxColumn;
+        private DataGridViewCellEventHandler dataGridRak_CellContentDoubleClick;
+        private EventHandler dataGridRak_Click;
+        private EventHandler pictureBox5_Click;
+        private DataGridViewTextBoxColumn nomorRakDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn kategoriRakDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn lokasiRakDataGridViewTextBoxColumn;
+        private ContextMenuStrip contextMenuStrip4;
+        private ToolStripMenuItem deleteRowToolStripMenuItem;
     }
 }

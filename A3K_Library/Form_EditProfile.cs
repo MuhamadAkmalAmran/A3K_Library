@@ -16,5 +16,10 @@ namespace A3K_Library
         {
             InitializeComponent();
         }
+
+        private void Form_EditProfile_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
