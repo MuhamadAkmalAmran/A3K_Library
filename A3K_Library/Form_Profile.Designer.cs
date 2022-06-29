@@ -29,6 +29,7 @@ namespace A3K_Library
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Profile));
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -46,9 +47,14 @@ namespace A3K_Library
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.a3K_LibraryDataSet9 = new A3K_Library.A3K_LibraryDataSet9();
+            this.pustakawanBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pustakawanTableAdapter = new A3K_Library.A3K_LibraryDataSet9TableAdapters.PustakawanTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pustakawanBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label8
@@ -79,6 +85,7 @@ namespace A3K_Library
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pustakawanBindingSource, "Id_Pustakawan", true));
             this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(639, 111);
             this.label6.Name = "label6";
@@ -90,6 +97,7 @@ namespace A3K_Library
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pustakawanBindingSource, "Nama_Pustakawan", true));
             this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(639, 186);
             this.label5.Name = "label5";
@@ -101,6 +109,7 @@ namespace A3K_Library
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pustakawanBindingSource, "Nomor_Telepon", true));
             this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(639, 261);
             this.label4.Name = "label4";
@@ -168,6 +177,7 @@ namespace A3K_Library
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pustakawanBindingSource, "Tanggal_Lahir", true));
             this.label11.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(639, 336);
             this.label11.Name = "label11";
@@ -179,6 +189,7 @@ namespace A3K_Library
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pustakawanBindingSource, "Jenis_Kelamin", true));
             this.label12.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(639, 411);
             this.label12.Name = "label12";
@@ -190,6 +201,7 @@ namespace A3K_Library
             // 
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pustakawanBindingSource, "Alamat", true));
             this.label13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(639, 486);
             this.label13.Name = "label13";
@@ -233,6 +245,20 @@ namespace A3K_Library
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
+            // a3K_LibraryDataSet9
+            // 
+            this.a3K_LibraryDataSet9.DataSetName = "A3K_LibraryDataSet9";
+            this.a3K_LibraryDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pustakawanBindingSource
+            // 
+            this.pustakawanBindingSource.DataMember = "Pustakawan";
+            this.pustakawanBindingSource.DataSource = this.a3K_LibraryDataSet9;
+            // 
+            // pustakawanTableAdapter
+            // 
+            this.pustakawanTableAdapter.ClearBeforeFill = true;
+            // 
             // Form_Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -264,6 +290,8 @@ namespace A3K_Library
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pustakawanBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -287,5 +315,8 @@ namespace A3K_Library
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private A3K_LibraryDataSet9 a3K_LibraryDataSet9;
+        private System.Windows.Forms.BindingSource pustakawanBindingSource;
+        private A3K_LibraryDataSet9TableAdapters.PustakawanTableAdapter pustakawanTableAdapter;
     }
 }

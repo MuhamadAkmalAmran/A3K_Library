@@ -31,6 +31,8 @@ namespace A3K_Library
 
         private void Form_Profile_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'a3K_LibraryDataSet9.Pustakawan' table. You can move, or remove it, as needed.
+            this.pustakawanTableAdapter.Fill(this.a3K_LibraryDataSet9.Pustakawan);
 
         }
 

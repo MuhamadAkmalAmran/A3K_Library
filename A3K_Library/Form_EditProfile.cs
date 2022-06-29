@@ -23,7 +23,6 @@ namespace A3K_Library
 
         private void Form_EditProfile_Load(object sender, EventArgs e)
         {
-            txtId.Text.("1001");
             txtId.Enabled = false;
         }
 
