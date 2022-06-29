@@ -32,7 +32,7 @@ namespace A3K_Library
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Book));
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCariBuku = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -87,13 +87,14 @@ namespace A3K_Library
             this.label1.TabIndex = 9;
             this.label1.Text = "Buku";
             // 
-            // textBox1
+            // txtCariBuku
             // 
-            this.textBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(357, 139);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(442, 54);
-            this.textBox1.TabIndex = 7;
+            this.txtCariBuku.Font = new System.Drawing.Font("Arial Rounded MT Bold", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCariBuku.Location = new System.Drawing.Point(357, 139);
+            this.txtCariBuku.Name = "txtCariBuku";
+            this.txtCariBuku.Size = new System.Drawing.Size(442, 46);
+            this.txtCariBuku.TabIndex = 7;
+            this.txtCariBuku.TextChanged += new System.EventHandler(this.txtCariBuku_TextChanged);
             // 
             // dataGridView1
             // 
@@ -367,7 +368,7 @@ namespace A3K_Library
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCariBuku);
             this.Controls.Add(this.dataGridView1);
             this.DoubleBuffered = true;
             this.Name = "Form_Book";
@@ -394,7 +395,7 @@ namespace A3K_Library
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCariBuku;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;

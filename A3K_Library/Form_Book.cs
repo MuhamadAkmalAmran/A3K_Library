@@ -54,6 +54,31 @@ namespace A3K_Library
                 conect.Close();
             }
         }
+
+        void CariBuku()
+        {
+            SqlConnection conect = conn.GetConn();
+
+            try
+            {
+                conect.Open();
+                cmd = new SqlCommand("Select * from Buku where Kode_Buku like '%" + txtCariBuku.Text + "%' or Judul_Buku like '%" + txtCariBuku.Text + "%' or Subjek like '%" + txtCariBuku.Text + "%'", conect);
+                ds = new DataSet();
+                da = new SqlDataAdapter(cmd);
+                da.Fill(ds, "Buku");
+                dataGridBook.DataSource = ds;
+                dataGridBook.DataMember = "Buku";
+                dataGridBook.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            }
+            catch (Exception x)
+            {
+                MessageBox.Show(x.ToString());
+            }
+            finally
+            {
+                conect.Close();
+            }
+        }
         private void Form_Book_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'a3K_LibraryDataSet8.Rak' table. You can move, or remove it, as needed.
@@ -130,7 +155,7 @@ namespace A3K_Library
 
         private void dataGridBook_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            Form_DetailBook Book1 = new Form_DetailBook();
+            /*Form_DetailBook Book1 = new Form_DetailBook();
             Book1.labelKode.Text = this.dataGridBook.CurrentRow.Cells[0].Value.ToString();
             Book1.labelPenulis.Text = this.dataGridBook.CurrentRow.Cells[1].Value.ToString();
             Book1.labelJudul.Text = this.dataGridBook.CurrentRow.Cells[2].Value.ToString();
@@ -145,7 +170,7 @@ namespace A3K_Library
 
             Book1.labelEdisi.Text = this.dataGridBook.CurrentRow.Cells[11].Value.ToString();
             Book1.labelDeskripsi.Text = this.dataGridBook.CurrentRow.Cells[12].Value.ToString();
-            Book1.ShowDialog();
+            Book1.ShowDialog();*/
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
@@ -191,6 +216,11 @@ namespace A3K_Library
             {
                 MessageBox.Show(x.ToString());
             }
+        }
+
+        private void txtCariBuku_TextChanged(object sender, EventArgs e)
+        {
+            CariBuku();
         }
     }
 }
