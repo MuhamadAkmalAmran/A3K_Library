@@ -45,13 +45,11 @@ namespace A3K_Library
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.a3K_LibraryDataSet9 = new A3K_Library.A3K_LibraryDataSet9();
             this.pustakawanBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pustakawanTableAdapter = new A3K_Library.A3K_LibraryDataSet9TableAdapters.PustakawanTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pustakawanBindingSource)).BeginInit();
@@ -221,18 +219,6 @@ namespace A3K_Library
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1100, 111);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 23;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
@@ -267,7 +253,6 @@ namespace A3K_Library
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1262, 673);
             this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
@@ -288,7 +273,6 @@ namespace A3K_Library
             this.Text = "Form_Profile";
             this.Load += new System.EventHandler(this.Form_Profile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.a3K_LibraryDataSet9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pustakawanBindingSource)).EndInit();
@@ -313,7 +297,6 @@ namespace A3K_Library
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox6;
         private A3K_LibraryDataSet9 a3K_LibraryDataSet9;
         private System.Windows.Forms.BindingSource pustakawanBindingSource;
