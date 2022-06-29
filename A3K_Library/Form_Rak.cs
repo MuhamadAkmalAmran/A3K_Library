@@ -120,7 +120,6 @@ namespace A3K_Library
      
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-
             
         }
 
@@ -170,7 +169,7 @@ namespace A3K_Library
                 er.txtCategoryEd.Text = row.Cells[1].Value.ToString();
                 er.txtLocEd.Text = row.Cells[2].Value.ToString();
                 er.Show();
-                this.Hide();
+                this.Close();
             }
             catch (Exception x)
             {
@@ -210,6 +209,7 @@ namespace A3K_Library
             if (!this.dataGridRak.Rows[this.rowIndex].IsNewRow)
             {
                 this.dataGridRak.Rows.RemoveAt(this.rowIndex);
+
             }
         }
 

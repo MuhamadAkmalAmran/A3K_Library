@@ -52,21 +52,6 @@ namespace A3K_Library
                     MessageBox.Show(x.ToString());
                 }
             }
-
-            /*dt = a3K_LibraryDataSet.Tables["Rak"];
-            dr = dt.NewRow();
-            dr[0] = txtNoAdd.Text;
-            dr[1] = txtCategoryAdd.Text;
-            dr[2] = txtLocAdd.Text;
-            dt.Rows.Add(dr);
-            rakTableAdapter.Update(a3K_LibraryDataSet);
-            txtNoAdd.Text = System.Convert.ToString(dr[0]);
-            txtCategoryAdd.Enabled = false;
-            txtLocAdd.Enabled = false;
-            this.rakTableAdapter.Fill(this.a3K_LibraryDataSet.Rak);
-            btnAddRak.Enabled = false;
-            new Form_Rak().Show();
-            this.Close();*/
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
